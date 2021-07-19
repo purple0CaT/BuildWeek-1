@@ -1,3 +1,11 @@
+@font-face {
+    font-family: fontBold;
+    src: url(font/Gotham\ Medium\ Regular.ttf);
+}
+@font-face {
+    font-family: fontLight;
+    src: url(font/GothamLight.ttf);
+}
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -6,4 +14,69 @@ body {
     width: 100%;
     min-height: 100vh;
     font-size: 1rem;
+    font-family: SpotifyFont !important;
+    font-weight: bold;
+}
+
+/* FOnt link */
+
+.home-page {
+    min-height: 100vh;
+}
+
+
+
+/* SIDE BAR */
+.h-side-bar {
+    background-color: black;
+    width: 15rem;
+    padding: 10px;
+}
+
+.h-logo {
+    padding: 1rem 0 1rem 1rem;
+    color: white;
+    width: 15rem;
+    font-family: fontBold;
+}
+.fa-spotify{
+    font-size: 40px;
+    margin-right: 5px;
+}
+.h-logo h4 {
+    margin: auto 0;
+}
+    /* Sidebar Links */
+    .sd-links a{
+        font-family: fontLight;
+        color: #b3b3b3;
+    }
+
+
+/* MAIN SECTION */
+
+.h-main {
+    width: 100%;
+    background-color: #202020;
+}
+.sd-links a,
+.sd-links a:hover {
+    padding-left: 1.5rem;
+    text-decoration: none;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    border: 1px solid transparent;
+}
+
+.sd-links a:hover{
+    background-color: #282828;
+    border: 1px solid transparent;
+    color: white;
+}
+.sd-links span{
+    margin-left: 0.8rem;
+    padding-top: 0.4rem;
+}
+
+.sd-links i {
+    font-size: 1.7rem;
 }
