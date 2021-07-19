@@ -1,3 +1,35 @@
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222326;
+}
+
+
+
 #spot-logo {
-    max-height: 80px;
+max-height: 80px;
+}
+
+
+.divider {
+    line-height: 1px;
+    text-align: center;
+}
+
+.divider .divider-title {
+    background: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 0 21px;
+    text-transform: uppercase;
+}
+
+
+#inputEmail1 {
+    text-align: center;
+}
+
+#submit {
+    display: inline-block;
 }
