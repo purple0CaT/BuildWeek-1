@@ -233,6 +233,8 @@ body {
 .dropdown-menu{
     left: -25% !important;
     background-color: black;
+    top: 39px !important;
+    transform: translate3d(2.6rem, 0px, 0px)!important;
 }
 .dropdown-menu a {
     color: #b3b3b3 ;
