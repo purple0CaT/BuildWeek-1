@@ -33,3 +33,24 @@ max-height: 80px;
 #submit {
     display: inline-block;
 }
+
+.sep{
+    width:50%;
+    margin:0 auto;
+}
+
+#nologin {
+    text-align: center;
+}
+
+#spotsignup {
+    color:gray;
+    background-color: white;
+    
+}
+
+p {
+    font-size: x-small;
+    color:gray;
+    text-align: center;
+}
