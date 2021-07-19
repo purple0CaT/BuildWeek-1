@@ -181,3 +181,58 @@ body {
     opacity: 1;
     background-color: white;
 }
+
+/* Login button */
+.log-but-par {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    min-width: 50px;
+}
+.login-buttn {
+    background-color: black;
+    color: #b3b3b3;
+    border-bottom-left-radius: 23px;
+    border-top-left-radius: 23px;
+    padding: 0 !important;
+    align-items: center;
+}
+.login-buttn:hover,
+.press-buttn:hover {
+    color: white;
+}
+
+.login-buttn span {
+    padding-top: 0.4rem;
+    margin: auto 0;
+}
+.press-buttn::after {
+    margin-top: 10px;
+}
+.login-buttn img{
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    left: 0;
+    width: 30px;
+}
+.press-buttn {
+    border-bottom-right-radius: 23px;
+    border-top-right-radius: 23px;
+
+    background-color: black;
+    color: #b3b3b3;
+}
+
+.dropdown-menu{
+    left: -83% !important;
+    background-color: black;
+}
+.dropdown-menu a {
+    color: #b3b3b3 ;
+}
+
+.dropdown-menu a:hover {
+    background-color: unset;
+    color: white;
+}
