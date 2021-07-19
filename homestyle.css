@@ -1,0 +1,9 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-size: 1rem;
+}
