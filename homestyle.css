@@ -157,4 +157,27 @@ body {
 .h-main {
     width: 100%;
 }
+.main-arrows a i{
+    position: relative;
+    font-size: 1.5rem;
+    color: black;
+    opacity: 0.5;
+    transition: 0.5s;
+    border-radius: 50%;
+    background-color: #b3b3b3;
+}
+.main-arrows a i::after {
+    content: '';
+    position: absolute;
+    border: 4px solid black;
+    border-radius: 50%;
+    height: 1.6rem;
+    width: 1.6rem;
+    left: -1px;
+    top: -1px;
+}
 
+.main-arrows a:hover i {
+    opacity: 1;
+    background-color: white;
+}
