@@ -22,16 +22,18 @@ body {
 
 .home-page {
     min-height: 100vh;
+    background: rgb(63,7,6);
+    background: linear-gradient(180deg, rgba(63,7,6,1) 0%, rgba(18,18,18,1) 77%);
 }
-
-
 
 /* SIDE BAR */
-.h-side-bar {
+.side-bar{
+    height: 85vh;
     background-color: black;
-    width: 15rem;
-    padding: 10px;
 }
+.h-side-bar {
+    width: 15rem;
+    padding: 10px;}
 
 .h-logo {
     padding: 1rem 0 1rem 1rem;
@@ -47,36 +49,91 @@ body {
     margin: auto 0;
 }
     /* Sidebar Links */
-    .sd-links a{
+    .sd-links a,
+    .playlists a{
         font-family: fontLight;
         color: #b3b3b3;
     }
+    .sd-links a,
+    .playlists a,
+    .playlists a:hover,
+    .sd-links a:hover {
+        padding-left: 1.5rem;
+        text-decoration: none;
+        padding: 0.2rem 0 0.2rem 1rem;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        align-items: center !important;
+    }
+    
+    .sd-links a:hover,
+    .playlists > a:hover{
+        color: white;
+        transition: 0.7s;
+        opacity: 1;
+    }
+    
+    .active {
+        background-color: #282828;
+        color: white !important;
+    
+    }
+    .sd-links span {
+        margin-left: 0.8rem;
+        padding-top: 0.6rem;
+        font-size: 0.9rem;
+    }
+    
+    .sd-links i {
+        font-size: 1.3rem;
+    }
+    /* PLAYLISTS */
+    .playlists {
+        padding-bottom: 1em;
+        border-bottom: 1px solid #b3b3b34d;
+    }
+    .playlists i{
+        position: relative;
+        font-size: 1.3rem;
+    }
+    .fa-square-full::after {
+        content: '+';
+        position: absolute;
+        color: black;
+        left: 5px;
+        top: -3px;
+        font-size: 1.2rem;
+    }
 
+    .playlists span{
+        margin-left: 0.8rem;
+        padding-top: 0.6rem;
+        font-size: 0.9rem;
+
+    }
+    .heart-ico {
+    background: rgb(81,161,231);
+    background: linear-gradient(180deg, rgba(81,161,231,1) 0%, rgba(81,231,142,1) 100%);
+    height: 22px;
+    width: 22px;
+    }
+    .heart-ico i{
+        display: block;
+        font-size: 0.8rem;
+        text-align: center;
+        padding-top: 6px;
+    }
+
+    /* scrool track sidebar */
+    .side-tracks {
+        height: 100%;
+        overflow-y: scroll;
+        background-color: green;
+    }
 
 /* MAIN SECTION */
 
 .h-main {
     width: 100%;
-    background-color: #202020;
-}
-.sd-links a,
-.sd-links a:hover {
-    padding-left: 1.5rem;
-    text-decoration: none;
-    padding: 0.5rem 0 0.5rem 1.5rem;
-    border: 1px solid transparent;
 }
 
-.sd-links a:hover{
-    background-color: #282828;
-    border: 1px solid transparent;
-    color: white;
-}
-.sd-links span{
-    margin-left: 0.8rem;
-    padding-top: 0.4rem;
-}
-
-.sd-links i {
-    font-size: 1.7rem;
-}
