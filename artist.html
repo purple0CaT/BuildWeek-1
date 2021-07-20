@@ -1,30 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-    crossorigin="anonymous"
-  />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
- 
-    <link rel="stylesheet" href="./style/artist.css" >
-    <title>Artists</title>
-  </head>
+
+  <link rel="stylesheet" href="./style/artist.css">
+  <title>Spotify-Artists</title>
+</head>
+
 <body>
-  <div class="row">
-    <div class="col-2">
-       <!--side bar navigation start-->
   <div class="sidebar-container">
     <div class="sidebar-logo">
-     <img src="./Images/logo-spotify.png" alt="logo" width="160px" height="70px">
+      Project Name
     </div>
     <ul class="sidebar-navigation">
       <li class="header">Navigation</li>
@@ -35,258 +30,175 @@
       </li>
       <li>
         <a href="#">
-          <i class="fas fa-search"></i>Search
+          <i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard
+        </a>
+      </li>
+      <li class="header">Another Menu</li>
+      <li>
+        <a href="#">
+          <i class="fa fa-users" aria-hidden="true"></i> Friends
         </a>
       </li>
       <li>
         <a href="#">
-          <i class="fas fa-chart-bar"></i>Your Library
-        </a>
-      </li>
-      <li class="border-top-0"></li>
-      <li>
-        <a href="#">
-          <i class="fas fa-music"></i>Songs1
+          <i class="fa fa-cog" aria-hidden="true"></i> Settings
         </a>
       </li>
       <li>
         <a href="#">
-          <i class="fas fa-music"></i>Songs1
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="fas fa-music"></i> Songs1
-        </a>
-        <a href="#">
-          <i class="fas fa-music"></i> Songs1
-        </a>
-        <a href="#">
-          <i class="fas fa-music"></i> Songs1
-        </a>
-        <a href="#">
-          <i class="fas fa-music"></i> Songs1
-        </a>
-        <a href="#">
-          <i class="fas fa-music"></i> Songs1
-        </a>
-        <a href="#">
-          <i class="fas fa-music"></i> Songs1
+          <i class="fa fa-info-circle" aria-hidden="true"></i> Information
         </a>
       </li>
     </ul>
   </div>
 
-  <!--side bar navigation end-->
-    </div>
-    <div class="col-10">
-      <!--side content start-->
   <div class="content-container">
-    <!--Design static page for reference-->
-<!--Top section start-->
 
- <div class="artist-top-bar">
-   <!--top most start-->
-     <div class="navigation-icons">
-       <i class="fas fa-chevron-left"></i>
-       <i class="fas fa-chevron-right"></i>
-     </div>
-     <div class="login-profile">
-     
-   <div class="btn-group" role="group">
-     <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-       <i class="far fa-user-circle mr-4"></i>User Login
-     </button>
-     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-       <a class="dropdown-item" href="#">Dropdown link</a>
-       <a class="dropdown-item" href="#">Dropdown link</a>
-     </div>
-   </div>
-     </div>
-   <!--Top most end-->
-   <!--Heading start-->
- 
-     <div class="heading-artist">
-       <i class="bi bi-patch-check-fill">Verified</i>
-       <h1>Queens</h1>
-       <p>365889 listners</p>
-     </div>
-   <!--Heading end-->
- </div>
- </div>
- <!--Top section start-->
- 
- <!--Second section playlist start-->
- <div class="container">
-   <!--top heading start-->
-   <div class="row">
-     <div class="col">
-       
-     </div>
-   </div>
-     <!--top heading end-->
-     <!--Static design for playlist start-->
-     <section id="static-playlist-design">
-       <div class="container">
-             <!--heading to play and follow start-->
-             <div class="play-static">
-               <button type="button" class="btn"><i class="bi-pause-fill pause"></i></button> 
-               <button type="button" class="btn follow ">Follow</button>
-               <button type="button" class="btn "><i class="bi bi-three-dots"></i></button>
-             </div>
-              <!--heading to play and follow end-->    
-              <!--Play Music section start-->
-              <div class="row">
-               <!--Playlist section start-->
-               <div class="col-8">
-                 <h4>Popular</h4>
-                 <!--table start-->
-                 <table class="text-white w-100">
-                
-                   <tbody>
-                     <tr>
-                       <th scope="row">1</th>
-                       <td class="ml-2"><img src="./Images/sample-image.svg" alt="sample-image" >&nbsp;&nbsp; Another One bites in Dust</td>
-                       <td>1,23,080,00</td>
-                       <td>2:59</td>
-                     </tr>
-                     <tr>
-                       <th scope="row">2</th>
-                       <td class="ml-2"><img src="./Images/sample-image.svg" alt="sample-image" >&nbsp;&nbsp; Another One bites in Dust</td>
-                       <td>1,23,080,00</td>
-                       <td>2:59</td>
-                     </tr>
-                     <tr>
-                       <th scope="row">3</th>
-                       <td class="ml-2"><img src="./Images/sample-image.svg" alt="sample-image" >&nbsp;&nbsp; Another One bites in Dust</td>
-                       <td>1,23,080,00</td>
-                       <td>2:59</td>
-                     </tr>
-                     <tr>
-                       <th scope="row">4</th>
-                       <td class="ml-2"><img src="./Images/sample-image.svg" alt="sample-image" >&nbsp;&nbsp; Another One bites in Dust</td>
-                       <td>1,23,080,00</td>
-                       <td>2:59</td>
-                     </tr>
-                     <tr>
-                       <th scope="row">5</th>
-                       <td class="ml-2"><img src="./Images/sample-image.svg" alt="sample-image" >&nbsp;&nbsp; Another One bites in Dust</td>
-                       <td>1,23,080,00</td>
-                       <td>2:59</td>
-                     </tr>
-                     <tr>
-                       <th scope="row">6</th>
-                       <td class="ml-2"><img src="./Images/sample-image.svg" alt="sample-image" >&nbsp;&nbsp; Another One bites in Dust</td>
-                       <td>1,23,080,00</td>
-                       <td>2:59</td>
-                     </tr>
-                    
-                   </tbody>
-                 </table>
-                 <!--table end-->
-               </div>
-      <!--Playlist section end-->
-               <!--song display details start-->
-               <div class="col-4 artist-pick"> 
-                 <h4> Artists Pick</h4>
-                <div class="row">
-                  <div class="col">
-                   
-                   <img src="./Images/sample-image.svg" alt="sample">
-                  </div>
-                  <div class="col">
-                   <div class="artist-pick-section">
-                     <p>Posted By Queen</p>
-                     <h5> Queen Best Of</h5>
-                     <p>Playlist</p>
-                   </div>
-                  </div>
-                </div>
-               </div>
-                <!--song display details end-->
-             </div>
-   <!--Play Music section end-->
-       </div>
- 
-     </section>
-     <!--Static design for playlist end-->
-     <!--Music player Start-->
-     <section id="play-music-artists">
-      <div class="row mt-5">
+    <div class="container-fluid">
+
+      <div class="artist-top-bar">
+        <!--top most start-->
+        <div class="navigation-icons">
+          <i class="fas fa-chevron-left"></i>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="login-profile">
+
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="far fa-user-circle mr-4"></i>User Login
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="#">Dropdown link</a>
+              <a class="dropdown-item" href="#">Dropdown link</a>
+            </div>
+          </div>
+        </div>
+        <!--Top most end-->
+        <!--Heading start-->
+
+        <div class="heading-artist">
+          <i class="bi bi-patch-check-fill">Verified</i>
+          <h1>Queens</h1>
+          <p>365889 listners</p>
+        </div>
+        <!--Heading end-->
+      </div>
+    </div>
+    <!--Top section start-->
+
+    <!--Second section playlist start-->
+    <div class="container">
+      <!--top heading start-->
+      <div class="row">
         <div class="col">
-         <table class="table w-100 text-white">
-           <thead>
-             <tr>
-               <th>#</th>
-               <th>Title</th>
-               <th>Duration</th>
-               <th></th>
-             </tr>
-           </thead>
-           <tbody class="tracklist">
-             <!--1 song-->
-             <tr>
-               <th>1</th>
-               <td>title of song</td>
-               <td>time</td>
-               <td> <audio id="audio1">
-                 <source src="./Audio/sample_audio.mp3" />
-                 </audio> <button id="play"><i class="bi bi-play-fill play"></i></button> &nbsp;<button id="stop"><i class="bi bi-pause-fill pause"></i></button> </td>
-             </tr>
-             <!--1 song end-->
-             <!--2nd song start-->
-             <tr>
-               <th>1</th>
-               <td>title of song</td>
-               <td>time</td>
-               <td> <audio id="audio2">
-                 <source src="./Audio/sample_audio.mp3" />
-                 </audio> <button id="play2"><i class="bi bi-play-fill play"></i></button> &nbsp;<button id="stop2"><i class="bi bi-pause-fill pause"></i></button> </td>
-             </tr>
-             <!--2nd song end-->
-           </tbody>
-         </table>
+
         </div>
       </div>
-     </section>
-     <!--Music player end-->
- </div>
- 
- 
- 
- <!--second section playlist end-->
- </div>
+      <!--top heading end-->
+      <!--Static design for playlist start-->
+      <section id="static-playlist-design">
+        <div class="container">
+          <!--heading to play and follow start-->
+          <div class="play-static">
+            <button type="button" class="btn"><i class="bi-pause-fill pause"></i></button>
+            <button type="button" class="btn follow ">Follow</button>
+            <button type="button" class="btn "><i class="bi bi-three-dots"></i></button>
+          </div>
+          <!--heading to play and follow end-->
+          <!--Play Music section start-->
+          <div class="row">
+            <!--Playlist section start-->
+            <div class="col-8">
+              <h4>Popular</h4>
+              <!--table start-->
+              <table class="text-white w-100">
 
- <!--side content end-->
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td class="ml-2"><img src="./Images/sample-image.svg" alt="sample-image">&nbsp;&nbsp; Another One
+                      bites in Dust</td>
+                    <td>1,23,080,00</td>
+                    <td>2:59</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td class="ml-2"><img src="./Images/sample-image.svg" alt="sample-image">&nbsp;&nbsp; Another One
+                      bites in Dust</td>
+                    <td>1,23,080,00</td>
+                    <td>2:59</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td class="ml-2"><img src="./Images/sample-image.svg" alt="sample-image">&nbsp;&nbsp; Another One
+                      bites in Dust</td>
+                    <td>1,23,080,00</td>
+                    <td>2:59</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td class="ml-2"><img src="./Images/sample-image.svg" alt="sample-image">&nbsp;&nbsp; Another One
+                      bites in Dust</td>
+                    <td>1,23,080,00</td>
+                    <td>2:59</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td class="ml-2"><img src="./Images/sample-image.svg" alt="sample-image">&nbsp;&nbsp; Another One
+                      bites in Dust</td>
+                    <td>1,23,080,00</td>
+                    <td>2:59</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td class="ml-2"><img src="./Images/sample-image.svg" alt="sample-image">&nbsp;&nbsp; Another One
+                      bites in Dust</td>
+                    <td>1,23,080,00</td>
+                    <td>2:59</td>
+                  </tr>
+
+                </tbody>
+              </table>
+              <!--table end-->
+            </div>
+            <!--Playlist section end-->
+            <!--song display details start-->
+            <div class="col-4 artist-pick">
+              <h4> Artists Pick</h4>
+              <div class="row">
+                <div class="col">
+
+                  <img src="./Images/sample-image.svg" alt="sample">
+                </div>
+                <div class="col">
+                  <div class="artist-pick-section">
+                    <p>Posted By Queen</p>
+                    <h5> Queen Best Of</h5>
+                    <p>Playlist</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--song display details end-->
+          </div>
+          <!--Play Music section end-->
+
+        </div>
     </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"></script>
+
+
   </div>
- 
-  
-   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-  
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
-  <script>
-      let audio_info = document.getElementById('audio1');
-   document.getElementById('play').addEventListener('click', function(){
-       audio_info.play();
-   }, false);
-//
-   document.getElementById('stop').addEventListener('click', function(){
-       audio_info.pause();
-   }, false);
-
-   let audio2_info = document.getElementById('audio2');
-   document.getElementById('play2').addEventListener('click', function(){
-       audio_info.play();
-   }, false);
-   console.log('2 plau')
-//
-   document.getElementById('stop2').addEventListener('click', function(){
-       audio_info.pause();
-   }, false);
-
-  </script>
 </body>
+
 </html>
