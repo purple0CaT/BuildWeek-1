@@ -4,10 +4,81 @@ html{
 }
 body{
     font-family: Circular,Helvetica,Arial,sans-serif!important;
-    margin: 0;
+    margin: 0 auto;
    background-image: linear-gradient(#212c39,#121e3d 50%,#000);
 }
-.artist-top-bar {
+.sidebar-container {
+    position: fixed;
+    width: 220px;
+    height: 100%;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background:#000000;
+    color: #fff;
+  }
+  
+.sidebar-logo {
+    padding: 10px 15px 10px 30px;
+    font-size: 20px;
+
+  }
+  
+  .sidebar-navigation {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+  }
+  
+  .sidebar-navigation li {
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    line-height: 20px;
+  }
+  
+  .sidebar-navigation li a {
+    padding: 10px 15px 10px 30px;
+    display: block;
+    color: #fff;
+  }
+  
+  .sidebar-navigation li .fa , .sidebar-navigation li .fas{
+    margin-right: 10px;
+  }
+  
+    
+  .sidebar-navigation li::before {
+    
+    position: absolute;
+    content: '';
+    height: 100%;
+    left: 0;
+    top: 0;
+    -webkit-transition: width 0.2s ease-in;
+    transition: width 0.2s ease-in;
+    width: 3px;
+    z-index: -1;
+  }
+  
+  
+  
+  .sidebar-navigation .header {
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #151515;
+    padding: 10px 15px 10px 30px;
+    
+  }
+  
+  .sidebar-navigation .header::before {
+    background-color: transparent;
+  }
+  
+  
+  .artist-top-bar {
     display: inline-block;
     background-image: url(./../Images/background-image.png),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     width: 100%;
