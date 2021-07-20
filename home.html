@@ -401,7 +401,45 @@
             </div>
         </div>
         <div class="play-bar">
-            
+        <div class="row w-100 h-100">
+            <div class="col-3 d-flex justify-content-start align-items-center left-play">
+                <div class="play-img mr-3">
+                    <img src="https://source.unsplash.com/random?33" alt="">
+                </div>
+                <div class="play-name align-middle mr-3">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <small>Lorem</small>
+                </div>
+                <div class="playL-icon d-flex align-items-center">
+                    <a href="#" class="mr-3 text align-items-center d-flex">
+                        <i class="far fa-heart"></i> <!-- change far by fas, to heart fill up-->
+                    </a>
+                    <a href="#" class="mr-3 text align-items-center d-flex"><i class="far fa-window-maximize"></i></a>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-12 play-navigation d-flex justify-content-center align-items-center">
+                        <i class="fas fa-random" id="randomBtn"></i>
+                        <i class="fas fa-step-backward" id="prewBtn"></i>
+                        <i class="fas fa-play-circle" id="playBtn"></i>
+                        <i class="fas fa-step-forward" id="nextBtn"></i>
+                        <i class="fas fa-redo-alt" id="repeatBtn"></i>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center align-items-center input-navigation">
+                    <small id="timeStart">00:00</small>
+                    <input class="mx-3" id="durationM" type="range" min="0" max="100" value="0" onchange="durationChange()">
+                    <small id="timeFinish">00:00</small>
+                </div>
+                </div>
+            </div>
+            <div class="col-3 d-flex justify-content-end align-items-center volumeR">
+                <i class="fas fa-indent"></i>
+                <i class="fas fa-laptop-house"></i>
+                <i class="fas fa-volume-up"></i>
+                <input class="w-25" id="volumeM" type="range" min="0" max="100" value="90" onchange="valumeChange()">
+            </div>
+        </div>
         </div>
 </section>
 
