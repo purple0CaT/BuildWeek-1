@@ -16,7 +16,10 @@ body {
     font-size: 1rem;
     font-family: fontLight;
 }
-
+a:hover {
+    text-decoration: none;
+    color: unset;
+}
 /* FOnt link */
 
 .home-page {
@@ -157,7 +160,7 @@ body {
 /* MAIN SECTION */
 
 .h-main {
-    width: 100%;
+    width: calc(100% - 15rem);
 }
 .main-arrows a i{
     position: relative;
@@ -317,3 +320,99 @@ body {
 
 
 /* recentrly played */
+.recently-ply a{
+    color: #b3b3b3 ;
+    transition: 0.3s;
+}
+
+.recently-ply a:hover{
+    color: white ;
+}
+.recent-played {
+    display: flex;
+    flex: 0 0 12%;
+    justify-content:space-between;
+}
+
+.recent-card {
+    background-color: #171717;
+    width: 12%;
+    height: 16rem;
+    color: #b3b3b3;
+    transition: 0.3s;
+}
+.recent-card:hover {
+    text-decoration: none;
+    color: white;
+}
+/* for 4 img in card */
+.img-card-q {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 50%;
+    width: 100%;
+    aspect-ratio: 1/1;
+    box-shadow: 0 10px 10px black;
+}
+.img-card-q img {
+    height: 50%;
+    aspect-ratio: 1/1;
+}
+/* end */
+.img-card {
+    box-shadow: 0 10px 10px black;
+
+    display: flex;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+.img-card img {
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+.img-card i {
+    font-size: 3rem;
+    color: white;
+}
+
+
+.body-card{
+    max-height: 4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.body-card h6{
+    color: white !important;
+    font-family: fontBold;
+}
+
+
+/* SHOWS TO TRY */
+
+.shows-card {
+    background-color: #171717;
+    width: 12%;
+    height: 16rem;
+    color: #b3b3b3;
+    transition: 0.3s;
+}
+.shows-card:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.shows-card .img-card,
+.shows-card .img-card-q{
+    border-radius: 0.4rem !important;
+    overflow: hidden !important;
+}
+/* PLAY BAR */
+
+.play-bar {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: cadetblue;
+}
