@@ -3,8 +3,9 @@ html{
     
 }
 body{
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Circular,Helvetica,Arial,sans-serif!important;
     margin: 0;
+   background-image: linear-gradient(#212c39,#121e3d 50%,#000);
 }
 .artist-top-bar {
     display: inline-block;
@@ -17,9 +18,16 @@ body{
     float: left;
     color: #C1C1C1;
 }
+
 .login-profile {
     float: right;
 } 
+.btn-secondary {
+    background-color: #120203;
+    border-color: #120203;
+    box-sizing: border-box;
+    box-shadow: -10px 10px 13px 0px #000000;
+}
 .heading-artist {
     padding-top: 16%;
     padding-left: 20px;
@@ -32,3 +40,57 @@ body{
     font-size: 4.5rem;
 }
 .heading-artist p{font-size: 17px;}
+#static-playlist-design{
+    background: rgb(52,52,52);
+background: linear-gradient(180deg, rgba(52,52,52,1) 40%, rgba(18,18,18,1) 60%);
+padding: 47px 0;box-shadow: -10px 10px 13px 0px #000000;
+}
+.play-static{
+    margin-bottom: 20px;
+}
+.play-static i.pause{
+        font-size: 2.4rem;
+        background-color: #1DB954;
+        border-radius: 50%;
+        color: #fff;
+        padding: 10px;
+}
+.play-static button.follow {
+    background: transparent;
+    color: #fff;
+    padding: 3px 19px;
+    font-weight: 800;
+    border: 1px solid #666666;
+}
+.play-static i.bi-three-dots{
+    color: #ccc;
+    top: 8px;
+    font-size: 23px;
+}
+#static-playlist-design h4{
+    font-size: 1.9rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 4.2rem;
+}
+#static-playlist-design table {
+    border-collapse: collapse;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 4.4rem;
+}
+#static-playlist-design table th{
+    padding-right: 15px;
+}
+#static-playlist-design table img{
+    width:50px;
+    height: 50px;
+    background:whitesmoke;
+    border: 1px solid #C1C1C1;
+}
+.artist-pick img{
+    background:#ccc;
+}
+.artist-pick-section {
+    color: #fff;
+}
