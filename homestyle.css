@@ -337,7 +337,6 @@ a:hover {
 .recent-card {
     background-color: #171717;
     width: 12%;
-    height: 16rem;
     color: #b3b3b3;
     transition: 0.3s;
 }
@@ -392,7 +391,6 @@ a:hover {
 .shows-card {
     background-color: #171717;
     width: 12%;
-    height: 16rem;
     color: #b3b3b3;
     transition: 0.3s;
 }
@@ -450,7 +448,7 @@ a:hover {
     transition: 0.3s;
 }
 .playL-icon i:hover {
-    color: white;
+    color: #1DB352;
 }
 /* middle section */
 .play-navigation {
