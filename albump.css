@@ -25,7 +25,7 @@ a:hover {
 .home-page {
     min-height: 100vh;
     background: rgb(167,59,135);
-    background: linear-gradient(180deg, rgba(167,59,135,1) 0%, rgba(25,25,25,1) 45%);
+    background: linear-gradient(180deg, rgba(167,59,135,1) 0%, rgba(25,25,25,1) 50%);
 }
 
 
@@ -256,7 +256,7 @@ a:hover {
 
 
 
-/* Content SECTION */
+/* ------------------Content SECTION */
 .album-header {
     width: 100%;
     height: 15rem;
@@ -275,14 +275,26 @@ a:hover {
     height: 100%;
     aspect-ratio: 1/1;
 }
+.albm-details {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
+.albm-info {
+padding-top: 0.5rem;
+}
 .albm-details img {
     width: 30px;
     aspect-ratio: 1/1;
     border-radius: 50%;
 }
-
-
+/* list tracks */
+.tracks-lists {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.158);
+    width: 100%;
+}
 /* ----------------------------------- PLAY BOTTOM BAR */
 
 .play-bar {
