@@ -26,7 +26,7 @@ body{
     background-color: #120203;
     border-color: #120203;
     box-sizing: border-box;
-    box-shadow: 1px 2px 2px 1px #120201;
+    box-shadow: -10px 10px 13px 0px #000000;
 }
 .heading-artist {
     padding-top: 16%;
@@ -43,7 +43,7 @@ body{
 #static-playlist-design{
     background: rgb(52,52,52);
 background: linear-gradient(180deg, rgba(52,52,52,1) 40%, rgba(18,18,18,1) 60%);
-padding: 47px 0;
+padding: 47px 0;box-shadow: -10px 10px 13px 0px #000000;
 }
 .play-static{
     margin-bottom: 20px;
@@ -68,7 +68,7 @@ padding: 47px 0;
     font-size: 23px;
 }
 #static-playlist-design h4{
-    font-size: 2.3rem;
+    font-size: 1.9rem;
     color: #fff;
     font-weight: 700;
     line-height: 4.2rem;
@@ -87,4 +87,10 @@ padding: 47px 0;
     height: 50px;
     background:whitesmoke;
     border: 1px solid #C1C1C1;
+}
+.artist-pick img{
+    background:#ccc;
+}
+.artist-pick-section {
+    color: #fff;
 }
