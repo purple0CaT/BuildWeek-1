@@ -1,6 +1,6 @@
 @font-face {
     font-family: fontBold;
-    src: url(font/Gotham\ Medium\ Regular.ttf);
+    src: url(font/GothamBold.ttf);
 }
 @font-face {
     font-family: fontLight;
@@ -45,7 +45,6 @@ img {
     padding: 1rem 0 1rem 1rem;
     color: white;
     width: 15rem;
-    font-family: fontBold;
 }
 .fa-spotify{
     font-size: 40px;
@@ -56,7 +55,7 @@ img {
 }
     /* Sidebar Links */
     .side-tracks {
-        font-family: fontLight;
+        font-family: fontLight !important;
     }
     .sd-links a,
     .playlists a{
