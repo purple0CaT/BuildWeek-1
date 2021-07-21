@@ -21,6 +21,7 @@ let timer
 let indx = 0
 let autoplay = 0
 let playingSong = false
+let muteSong = 0
 
 
 // music libr
@@ -67,6 +68,8 @@ function load_track(indx){
     track.load()
 
     timer = setInterval(rangeSl, 1000)
+    timer = setInterval(barProg, 1000)
+
 }
 load_track(0)
 
@@ -122,18 +125,21 @@ function prewSong (){
     }
 
 }
-// Volume change
+// Duration change
+function barProg() {
+    let percent
+    percent = Math.round(track.currentTime / (track.duration / 100))
+    durat.style.background = `linear-gradient(to right, white, ${percent}%, #b3b3b3 0%)`
+    volume.style.background = `linear-gradient(to right, white, ${volume.value}%, #b3b3b3 0%)`
+}
 
 function durChange(){
+
     let slider = track.duration * (durat.value / 100)
     track.currentTime = slider
-}
-// mute
-function muteM (){
-    track.volume = 0
-    volume.value = 0
-}
+    durat.style.background = `linear-gradient(to right, white, ${durat.value}%, #b3b3b3 0%)`
 
+}
 
 
 // slider range
@@ -156,8 +162,40 @@ function rangeSl(){
             }
         }
 }
+
+
+// MUTE
+let trackVol = 0
+
+function muteM (){
+    if (muteSong == 0 ){
+        muteSong = 1
+        track.volume = 0
+        volume.value = 0    
+    } else {
+        muteSong = 0
+        track.volume = trackVol / 100
+        volume.value = trackVol
+    }
+
+    switch (muteSong){
+        case 0:     
+        mute.classList.add("fa-volume-up")
+        mute.classList.remove("fa-volume-mute")
+        mute.style.color = "#b3b3b3"
+        break;
+        case 1:     
+        mute.classList.remove("fa-volume-up")
+        mute.classList.add("fa-volume-mute")
+        mute.style.color = "#1DB352"
+        break;
+    }
+}
+
 function volChange(){
     track.volume = volume.value / 100
+    trackVol = volume.value
+
 }
 
 
