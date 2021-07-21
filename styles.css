@@ -5,10 +5,14 @@ body {
     color: #222326;
 }
 
+h1 {
+    font-size: medium;
+}
+
 
 
 #spot-logo {
-max-height: 80px;
+max-height: 35px;
 }
 
 
@@ -26,9 +30,20 @@ max-height: 80px;
 }
 
 
+.left-icon-holder {
+    position:relative;
+}
+
+
 #inputEmail1 {
     text-align: center;
 }
+
+#chkbox {
+    display: inline-block;
+}
+
+
 
 #submit {
     display: inline-block;
@@ -40,6 +55,7 @@ max-height: 80px;
 }
 
 #nologin {
+    font-size: medium;
     text-align: center;
 }
 
@@ -49,8 +65,58 @@ max-height: 80px;
     
 }
 
+#fb-icon {
+    text-align: center;
+}
+
+
+
 p {
     font-size: x-small;
     color:gray;
     text-align: center;
+}
+
+.email-form .form-control-lg{
+    width: 556px;
+    border-style:solid;
+    border-width: 1px;
+    border-color: grey;
+}
+
+.pswrd-form {
+    align-items: center;
+}
+
+.pswrd-form .form-control-lg{
+    width: 556px;
+    border-style:solid;
+    border-width: 1px;
+    border-color: grey;
+}
+
+.divider-title {
+    overflow: hidden;
+    text-align: center;
+}
+
+.divider-title:before, .divider-title:after{
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 25%;
+
+}
+
+.divider-title::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.divider-title::after {
+    left: 0.5em;
+    margin-right: -50%;
 }
