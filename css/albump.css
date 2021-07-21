@@ -1,6 +1,6 @@
 @font-face {
     font-family: fontBold;
-    src: url(font/Gotham\ Medium\ Regular.ttf);
+    src: url(font/GothamBold.ttf);
 }
 @font-face {
     font-family: fontLight;
@@ -349,12 +349,9 @@ padding-top: 0.5rem;
     cursor: pointer;
 }
 /* lists */
-.play-list {
-}
 .play-list-head {
     justify-content: space-between;
     color: #b3b3b3;
-    font-family: fontLight;
     border-bottom: 1px solid #b3b3b33a;
     font-size: 0.8rem;
 }
