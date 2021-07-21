@@ -13,8 +13,8 @@ body {
     margin: 0;
     width: 100%;
     min-height: 100vh;
-    font-size: 1rem;
-    font-family: fontLight;
+    font-size: 0.9rem;
+    font-family: fontBold;
 }
 a:hover {
     text-decoration: none;
