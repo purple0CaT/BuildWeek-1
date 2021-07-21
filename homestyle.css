@@ -20,6 +20,10 @@ a:hover {
     text-decoration: none;
     color: unset;
 }
+img {
+    object-fit: cover;
+}
+
 /* FOnt link */
 
 .home-page {
@@ -28,7 +32,7 @@ a:hover {
     background: linear-gradient(180deg, rgba(63,7,6,1) 0%, rgba(18,18,18,1) 40%);
 }
 
-/* SIDE BAR */
+/* ----------------------------------- SIDE BAR*/
 .side-bar{
     height: 85vh;
     background-color: black;
@@ -51,18 +55,38 @@ a:hover {
     margin: auto 0;
 }
     /* Sidebar Links */
+    .side-tracks {
+        font-family: fontLight;
+    }
     .sd-links a,
     .playlists a{
-        font-family: fontLight;
         color: #b3b3b3;
     }
+    .active {
+        background-color: #282828 !important;
+        color: white !important;
+    }
+    /* HOME SEARCH LIBRARY */
+    .sd-links a {
+        height: 2.5rem;
+    }
+    .sd-links span {
+        margin-left: 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .sd-links i {
+        font-size: 1.3rem;
+    }
+    
+    
+    /* PLAYLISTS and HOME Hover*/
     .sd-links a,
     .playlists a,
     .playlists a:hover,
     .sd-links a:hover {
-        padding-left: 1.5rem;
+        padding-left: 0.8rem;
         text-decoration: none;
-        padding: 0.2rem 0 0.2rem 1rem;
         border: 1px solid transparent;
         border-radius: 5px;
         align-items: center !important;
@@ -77,55 +101,50 @@ a:hover {
         opacity: 1;
     }
     
-    .active {
-        background-color: #282828;
-        color: white !important;
-    
-    }
-    .sd-links span {
-        margin-left: 0.8rem;
-        padding-top: 0.6rem;
-        font-size: 0.9rem;
-    }
-    
-    .sd-links i {
-        font-size: 1.3rem;
-    }
     /* PLAYLISTS */
     .playlists {
         padding-bottom: 1em;
         border-bottom: 1px solid #b3b3b34d;
     }
+    .playlists a {
+        margin-top: 0.8rem;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+    .playlists .img-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .playlists i{
         position: relative;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
+    .playlists span{
+        margin-left: 0.8rem;
+        font-size: 0.9rem;
+    }
+
     .fa-square-full::after {
         content: '+';
         position: absolute;
         color: black;
         left: 5px;
-        top: -3px;
+        top: -1px;
         font-size: 1.2rem;
     }
 
-    .playlists span{
-        margin-left: 0.8rem;
-        padding-top: 0.6rem;
-        font-size: 0.9rem;
-
-    }
     .heart-ico {
         background: rgb(69,10,241);
         background: linear-gradient(142deg, rgba(69,10,241,1) 0%, rgba(188,227,211,1) 87%);
         height: 22px;
         width: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .heart-ico i{
-        display: block;
         font-size: 0.8rem;
-        text-align: center;
-        padding-top: 6px;
     }
 
     /* scrool track sidebar */
@@ -277,10 +296,10 @@ a:hover {
     background-color: rgba(128, 128, 128, 0.3);
     width: 19%;
     height: 5rem;
-    border: 1px solid black;
     margin-bottom: 1rem;
     border-radius: 0.3rem;
 
+    overflow: hidden;
     color: white;
     text-decoration: none;
     transition: 0.3s;
