@@ -28,10 +28,14 @@ img {
 
 .home-page {
     min-height: 100vh;
+}
+.h-clr {
     background: rgb(63,7,6);
     background: linear-gradient(180deg, rgba(63,7,6,1) 0%, rgba(18,18,18,1) 40%);
 }
+.a-clr {
 
+}
 /* ----------------------------------- SIDE BAR*/
 .side-bar{
     height: 85vh;
@@ -45,13 +49,17 @@ img {
     padding: 1rem 0 1rem 1rem;
     color: white;
     width: 15rem;
+    justify-content: flex-start;
+    align-items: center;
 }
 .fa-spotify{
     font-size: 40px;
     margin-right: 5px;
 }
 .h-logo h4 {
-    margin: auto 0;
+    color: white;
+    padding-top: 0.6rem;
+    margin: 0;
 }
     /* Sidebar Links */
     .side-tracks {
