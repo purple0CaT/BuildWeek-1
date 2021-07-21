@@ -34,6 +34,8 @@ img {
     background: linear-gradient(180deg, rgba(63,7,6,1) 0%, rgba(18,18,18,1) 40%);
 }
 .a-clr {
+    background: rgb(167,59,135);
+    background: linear-gradient(180deg, rgba(167,59,135,1) 0%, rgba(25,25,25,1) 50%);
 
 }
 /* ----------------------------------- SIDE BAR*/
