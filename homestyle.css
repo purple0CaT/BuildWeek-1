@@ -176,11 +176,15 @@ img {
     .side-download i{
     font-size: 1.4rem;
     }
-/* MAIN SECTION */
+
+
+
+/* -----------------------------Top SECTION ARROWS LOGIN*/
 
 .h-main {
     width: calc(100% - 15rem);
 }
+
 .main-arrows a i{
     position: relative;
     font-size: 1.5rem;
@@ -188,7 +192,7 @@ img {
     opacity: 0.5;
     transition: 0.5s;
     border-radius: 50%;
-    background-color: #b3b3b3;
+    background-color: white;
 }
 .main-arrows a i::after {
     content: '';
@@ -203,8 +207,12 @@ img {
 
 .main-arrows a:hover i {
     opacity: 1;
-    background-color: white;
 }
+.arr-act i{
+    opacity: 1 !important;
+}
+
+
 
 /* Login button */
 .log-but-par {
@@ -269,7 +277,7 @@ img {
 
 
 
-/* MAIN SECTION */
+/* --------------------------------------MAIN SECTION */
 
 .header {
     font-family: fontBold;
