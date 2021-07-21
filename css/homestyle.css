@@ -57,6 +57,10 @@ img {
     .side-tracks {
         font-family: fontLight !important;
     }
+    .side-bar span{
+        padding-top: 0.6rem;
+    }
+    
     .sd-links a,
     .playlists a{
         color: #b3b3b3;
@@ -402,9 +406,10 @@ img {
 
 
 .body-card{
-    max-height: 4rem;
+    max-height: 5rem;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-top: 0.8rem !important;
 }
 .body-card h6{
     color: white !important;
