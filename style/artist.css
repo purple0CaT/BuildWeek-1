@@ -3,7 +3,7 @@ html{
   
 }
 body{
-  font-family: Circular,Helvetica,Arial,sans-serif!important;
+  font-family: Circular,Helvetica,Arial,sans-serif;
   margin: 0;
  background-image: linear-gradient(#212c39,#121e3d 50%,#000);
  scroll-behavior: smooth;
@@ -12,7 +12,7 @@ body{
 .sidebar-container {
 position: fixed;
 width: 220px;
-height: 100%;
+height: 700px;
 left: 0;
 overflow-x: hidden;
 overflow-y: auto;
@@ -22,9 +22,7 @@ color: #fff;
 
 
 .sidebar-logo {
-padding: 10px 15px 10px 30px;
-font-size: 20px;
-background-color: #2574A9;
+padding: 20px;
 }
 
 .sidebar-navigation {
@@ -48,7 +46,7 @@ display: block;
 color: #fff;
 }
 
-.sidebar-navigation li .fa {
+.sidebar-navigation li .fa ,.sidebar-navigation li .fas  {
 margin-right: 10px;
 }
 
@@ -57,10 +55,11 @@ margin-right: 10px;
 .sidebar-navigation li a:focus {
 text-decoration: none;
 outline: none;
+background-color: #505050;
 }
 
 .sidebar-navigation li::before {
-background-color: #2574A9;
+
 position: absolute;
 content: '';
 height: 100%;
@@ -76,7 +75,7 @@ z-index: -1;
 width: 100%;
 }
 
-.sidebar-navigation .header {
+.sidebar-navigation .header , .sidebar-navigation .songs {
 font-size: 12px;
 text-transform: uppercase;
 background-color: #151515;
@@ -86,13 +85,18 @@ padding: 10px 15px 10px 30px;
 .sidebar-navigation .header::before {
 background-color: transparent;
 }
+/*Scroll Bar*/
+::-webkit-scrollbar {
+  width: 20px;
+}
+
 
 .content-container {
 padding-left: 220px;
 }
 .artist-top-bar {
   display: inline-block;
-  background-image: url(./../Images/background-image.png),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  background-image: url(./../Images/queen-background.jpg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
   width: 100%;
   height: auto;
   background-blend-mode: hue;
@@ -119,10 +123,16 @@ padding-left: 220px;
   flex-direction: column;
   justify-items: baseline;
 }
+.heading-artist .icon-verified{font-size:23px; line-height: 39px;}
+.icon-verified i{color:#2579C4; font-size: 23px; margin-right: 12px;}
 .heading-artist h1 {
   font-size: 4.5rem;
 }
-.heading-artist p{font-size: 17px;}
+.heading-artist p {
+  font-size: 20px;
+  line-height: 37px;
+  font-style: italic;
+}
 #static-playlist-design{
   background: rgb(52,52,52);
 background: linear-gradient(180deg, rgba(52,52,52,1) 40%, rgba(18,18,18,1) 60%);
