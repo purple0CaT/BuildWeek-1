@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel = "icon" href ="https://img.icons8.com/material/48/000000/spotify--v1.png" 
+        type = "image/x-icon">
+
+    <script src="https://kit.fontawesome.com/0b1116b0b9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/albump.css">
+</head>
+<body>
+<section class="home-page d-flex">
+    <!-- side bar -->
+    <div class="side-bar">    
+        <div class="h-side-bar">
+            <div class="h-logo d-flex">
+                <i class="fab fa-spotify"></i>
+                <h4 class="d-inline-block">Spotify</h4>
+            </div>
+            <!-- home links -->
+            <div class="sd-links">
+                <a href="#" class="d-flex">
+                    <i class="fas fa-home"></i> 
+                    <span>Home</span></a>
+                <a href="#" class="d-flex">
+                    <i class="fas fa-search"></i> 
+                    <span>Search</span></a>
+                <a href="#" class="d-flex active">
+                    <i class="fas fa-align-left"></i> 
+                    <span>Your library</span></a>
+                
+            </div>
+            <br>
+            <!-- liked and playlists -->
+            <div class="playlists">
+                <a href="#" class="d-flex">
+                    <div class="img-icon">
+                        <i class="fas fa-square-full"></i>
+                    </div> 
+                    <span>Create Playlist</span></a>
+                <a href="#" class="d-flex">
+                    <div class="heart-ico">
+                        <i class="fas fa-heart"></i> 
+                    </div>
+                    <span>Liked Songs</span></a>
+            </div>
+        </div>
+        <!-- side bar tracks scroll -->
+        <div class="side-bar-bottom">
+            <div class="side-tracks">
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Funky Heavy Bluesy</p>
+                    <i class="fas fa-user-friends"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Funky Heavy Bluesy</p>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Funky Heavy Bluesy</p>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Funky Heavy Bluesy</p>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Funky Heavy Bluesy</p>
+                    <i class="fas fa-user-friends"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Funky Heavy Bluesy</p>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Funky Heavy Bluesy</p>
+                    <i class="fas fa-user-friends"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Funky Heavy Bluesy</p>
+                    <i class="fas fa-user-friends"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Funky Heavy Bluesy</p>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Funky Heavy Bluesy</p>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Funky Heavy Bluesy</p>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Funky Heavy Bluesy</p>
+                    <i class="fas fa-user-friends"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Funky Heavy Bluesy</p>
+                    <i class="fas fa-user-friends"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Funky Heavy Bluesy</p>
+                    <i class="fas fa-user-friends"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Funky Heavy Bluesy</p>
+                    <i class="fas fa-user-friends"></i>
+                </a>
+
+            </div>
+            <br>
+            <a href="#" class="d-flex justify-content-start side-download">
+                <i class="far fa-arrow-alt-circle-down mr-2"></i>
+                <p>Install App</p>
+            </a>
+            <br>
+        </div>
+    </div>
+    <!-- MAIN CONTENT SECTION -->
+        <div class="h-main">
+            <div class="mt-3 px-5">
+                <div class="row">
+                    <!-- arrows -->
+                    <div class="col-1 d-flex justify-content-start main-arrows">
+                        <a class="mr-3 arr-act" href="#"><i class="fas fa-chevron-circle-left"></i></a>
+                        <a href="#"><i class="fas fa-chevron-circle-right"></i></a>
+                    </div>
+                    <!-- space col -->
+                    <div class="col-9 d-none d-md-block"></div>
+                    <!-- login acc -->
+                    <div class="col-2">
+                        <div class="btn-group log-but-par">
+                            <button class="btn btn-sm login-buttn d-flex" type="button">
+                                <img src="img/spotify.ico" class="mr-2" alt="">
+                                <span class="">Diego </span>
+                            </button>
+                            <button type="button" class="btn btn-sm press-buttn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Settings</a>
+                                <a class="dropdown-item" href="#">Payment</a>
+                                <a class="dropdown-item" href="#">Premium</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <br>
+                <!-- album cover -->
+                <div class="album-header">
+                    <div class="albm-img mr-3">
+                        <img src="https://source.unsplash.com/random" alt="">
+                    </div>
+                    <div class="albm-title d-flex flex-column justify-content-end">
+                        <h6>Album</h6>
+                        <h1>Bohemian Rhapsody</h1>
+                        <div class="albm-details">
+                            <img src="https://source.unsplash.com/random?322" alt="">
+                            <div class="albm-info">
+                                <span>Queen</span>
+                                <small> &bull; 2018 </small>
+                                <small> &bull; 22 songs, </small>
+                                <small> &bull; 1hr 19 min </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Track LIST -->
+            <section class="tracks-lists px-5">
+                <div class="menu-icons d-flex align-items-center">
+                    <div class="play-alb mr-4">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <i class="far fa-heart mr-4"></i>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <br>
+                <br>
+                <!-- Title -->
+                <div class="play-list w-100 text-white">
+                    <div class="play-list-head d-flex">
+                        <div class="list-title d-flex">
+                            <span>#</span>
+                            <p>TITLE</p>
+                        </div>
+                        <div class="time">
+                            <i class="far fa-clock"></i>                        </div>
+                    </div>
+                    <br>
+                    <!-- tracks -->
+                        <a href="#" class="play-list-body d-flex align-items-center">
+                            <div class="list-title d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span>1</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-start">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <small>Queen</small>    
+                                </div>
+                            </div>
+                            <div class="time">
+                                <small>3:00</small>
+                            </div>
+                        </a>
+
+                        <a href="#" class="play-list-body d-flex align-items-center">
+                            <div class="list-title d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span>2</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-start">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <small>Queen</small>    
+                                </div>
+                            </div>
+                            <div class="time">
+                                <small>3:00</small>
+                            </div>
+                        </a>
+
+                        <a href="#" class="play-list-body d-flex align-items-center">
+                            <div class="list-title d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span>3</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-start">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <small>Queen</small>    
+                                </div>
+                            </div>
+                            <div class="time">
+                                <small>3:00</small>
+                            </div>
+                        </a>
+
+                        <a href="#" class="play-list-body d-flex align-items-center">
+                            <div class="list-title d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span>4</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-start">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <small>Queen</small>    
+                                </div>
+                            </div>
+                            <div class="time">
+                                <small>3:00</small>
+                            </div>
+                        </a>
+
+                        <a href="#" class="play-list-body d-flex align-items-center">
+                            <div class="list-title d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span>5</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-start">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <small>Queen</small>    
+                                </div>
+                            </div>
+                            <div class="time">
+                                <small>3:00</small>
+                            </div>
+                        </a>
+
+                        <a href="#" class="play-list-body d-flex align-items-center">
+                            <div class="list-title d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span>6</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-start">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <small>Queen</small>    
+                                </div>
+                            </div>
+                            <div class="time">
+                                <small>3:00</small>
+                            </div>
+                        </a>
+
+                        <a href="#" class="play-list-body d-flex align-items-center">
+                            <div class="list-title d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span>7</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-start">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <small>Queen</small>    
+                                </div>
+                            </div>
+                            <div class="time">
+                                <small>3:00</small>
+                            </div>
+                        </a>
+
+                        <a href="#" class="play-list-body d-flex align-items-center">
+                            <div class="list-title d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span>8</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-start">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <small>Queen</small>    
+                                </div>
+                            </div>
+                            <div class="time">
+                                <small>3:00</small>
+                            </div>
+                        </a>
+
+                        <a href="#" class="play-list-body d-flex align-items-center">
+                            <div class="list-title d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span>9</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-start">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <small>Queen</small>    
+                                </div>
+                            </div>
+                            <div class="time">
+                                <small>3:00</small>
+                            </div>
+                        </a>
+
+                        <a href="#" class="play-list-body d-flex align-items-center">
+                            <div class="list-title d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span>10</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-start">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <small>Queen</small>    
+                                </div>
+                            </div>
+                            <div class="time">
+                                <small>3:00</small>
+                            </div>
+                        </a>
+
+                        <a href="#" class="play-list-body d-flex align-items-center">
+                            <div class="list-title d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span>7</span>
+                                </div>
+                                <div class="d-flex flex-column align-items-start">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <small>Queen</small>    
+                                </div>
+                            </div>
+                            <div class="time">
+                                <small>3:00</small>
+                            </div>
+                        </a>
+
+            </section>
+        </div>
+</section>
+        <!-- PLAY BAR -->
+        <div class="play-bar">
+        <div class="row w-100 h-100">
+            <div class="col-3 d-flex justify-content-start align-items-center left-play">
+                <div class="play-img mr-3">
+                    <img id="titleImg" src="https://source.unsplash.com/random?33" alt="">
+                </div>
+                <div class="play-name align-middle mr-3">
+                    <p id="titleM">Lorem ipsum dolor sit.</p>
+                    <small id="authorM">Lorem</small>
+                </div>
+                <div class="playL-icon d-flex align-items-center">
+                    <a href="#" class="mr-3 text align-items-center d-flex">
+                        <i class="far fa-heart"></i> <!-- change far by fas, to heart fill up-->
+                    </a>
+                    <a href="#" class="mr-3 text align-items-center d-flex"><i class="far fa-window-maximize"></i></a>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row h-100">
+                    <div class="col-12 play-navigation d-flex justify-content-center align-items-center">
+                        <i class="fas fa-random" id="randomBtn"></i>
+                        <i class="fas fa-step-backward" id="prewBtn"></i>
+                        <i class="fas fa-play-circle" id="playBtn"></i>
+                        <i class="fas fa-step-forward" id="nextBtn"></i>
+                        <i class="fas fa-redo-alt" id="repeatBtn"></i>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center align-items-center input-navigation">
+                    <small id="timeStart">00:00</small>
+                    <input class="mx-3" id="durationM" type="range" min="0" max="100" value="0" onchange="durationChange()">
+                    <small id="timeFinish">00:00</small>
+                </div>
+                </div>
+            </div>
+            <div class="col-3 d-flex justify-content-end align-items-center volumeR">
+                <i class="fas fa-indent"></i>
+                <i class="fas fa-laptop-house"></i>
+                <i id="muteM" class="fas fa-volume-up"></i>
+                <input class="w-25" id="volumeM" type="range" min="0" max="100" value="40" onchange="valumeChange()">
+            </div>
+        </div>
+        </div>
+
+    
+<!-- SCRIPT -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="albump.js"></script>
+</body>
+</html>

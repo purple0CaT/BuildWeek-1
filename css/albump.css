@@ -20,22 +20,26 @@ a:hover {
     text-decoration: none;
     color: unset;
 }
-img {
-    object-fit: cover;
-}
-
 /* FOnt link */
 
 .home-page {
     min-height: 100vh;
-    background: rgb(63,7,6);
-    background: linear-gradient(180deg, rgba(63,7,6,1) 0%, rgba(18,18,18,1) 40%);
+    background: rgb(167,59,135);
+    background: linear-gradient(180deg, rgba(167,59,135,1) 0%, rgba(25,25,25,1) 50%);
+}
+
+
+img {
+    object-fit: cover;
 }
 
 /* ----------------------------------- SIDE BAR*/
 .side-bar{
     height: 85vh;
     background-color: black;
+}
+.side-bar span{
+    padding-top: 0.6rem;
 }
 .h-side-bar {
     width: 15rem;
@@ -45,6 +49,7 @@ img {
     padding: 1rem 0 1rem 1rem;
     color: white;
     width: 15rem;
+    font-family: fontBold;
 }
 .fa-spotify{
     font-size: 40px;
@@ -55,7 +60,7 @@ img {
 }
     /* Sidebar Links */
     .side-tracks {
-        font-family: fontLight !important;
+        font-family: fontLight;
     }
     .sd-links a,
     .playlists a{
@@ -177,13 +182,11 @@ img {
     }
 
 
-
-/* -----------------------------Top SECTION ARROWS LOGIN*/
+/* ------------------------------------ MAIN SECTION ARROWS AND LOGIN*/
 
 .h-main {
     width: calc(100% - 15rem);
 }
-
 .main-arrows a i{
     position: relative;
     font-size: 1.5rem;
@@ -211,7 +214,10 @@ img {
     opacity: 1 !important;
 }
 
-
+.main-arrows a:hover i {
+    opacity: 1;
+    background-color: white;
+}
 
 /* Login button */
 .log-but-par {
@@ -276,161 +282,116 @@ img {
 
 
 
-/* --------------------------------------MAIN SECTION */
-
-.header {
+/* -----------------------------------------Content SECTION */
+.album-header {
+    width: 100%;
+    height: 14rem;
+    display: flex;
+    color: white;
     font-family: fontBold;
-    color: white;
-    margin: 0;
 }
-.morn-tabs {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex: 0 0 20%;
-    color: white;
+.album-header small {
+    font-family: fontLight;
+    color: #b3b3b3;
 }
-.morn-tabs a div {
-    height: 100%;
+.albm-img {
     aspect-ratio: 1/1;
 }
-.morn-tabs a p {
-    margin: 0;
-    padding: 0;
-}
-
-.tab {
-    position: relative;
-    background-color: rgba(128, 128, 128, 0.3);
-    width: 19%;
-    height: 5rem;
-    margin-bottom: 1rem;
-    border-radius: 0.3rem;
-
-    overflow: hidden;
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-    font-family: fontBold;
-}
-.tab img {
-    width: 100%;
+.albm-img img {
     height: 100%;
+    aspect-ratio: 1/1;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.541);
 }
-
-.morn-tabs a:hover {
-    color: white;
-    text-decoration: none;
-}
-
-.liked-tab {
+.albm-details {
     display: flex;
     align-items: center;
-    justify-content: center;
-
-    background: rgb(69,10,241);
-    background: linear-gradient(142deg, rgba(69,10,241,1) 0%, rgba(188,227,211,1) 87%);}
-
-.liked-tab i {
-    font-size: 2rem;
-
+    gap: 5px;
 }
 
-.bands-tab {
-    flex-wrap: wrap;
-    flex: 0 0 25%
+.albm-info {
+padding-top: 0.5rem;
 }
-.bands-tab img {
-    width: 50%;
-    height: 50%;
+.albm-details img {
+    width: 30px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
 }
-
-
-/* recentrly played */
-.recently-ply a{
-    color: #b3b3b3 ;
-    transition: 0.3s;
+/* list tracks */
+.tracks-lists {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.158);
+    width: 100%;
+    padding: 2rem;
 }
-
-.recently-ply a:hover{
-    color: white ;
-}
-.recent-played {
-    display: flex;
-    flex: 0 0 12%;
-    justify-content:space-between;
-}
-
-.recent-card {
-    background-color: #171717;
-    width: 12%;
+.menu-icons i {
     color: #b3b3b3;
-    transition: 0.3s;
+    font-size: 1.8rem;
 }
-.recent-card:hover {
-    text-decoration: none;
-    color: white;
+.play-alb {
+    position: relative;
 }
-/* for 4 img in card */
-.img-card-q {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 50%;
-    width: 100%;
-    aspect-ratio: 1/1;
-    box-shadow: 0 10px 10px black;
-}
-.img-card-q img {
-    height: 50%;
-    aspect-ratio: 1/1;
-}
-/* end */
-.img-card {
-    box-shadow: 0 10px 10px black;
-
-    display: flex;
-    width: 100%;
-    aspect-ratio: 1/1;
-}
-.img-card img {
-    height: 100%;
-    aspect-ratio: 1/1;
-}
-.img-card i {
+.menu-icons i:first-child {
+    position: relative;
+    color: #1DB954;
+    background-color: white;
+    border-radius: 50%;
     font-size: 3rem;
-    color: white;
+}
+.menu-icons i:first-child::after {
+    position: absolute;
+    content: "";
+    width: 3.1rem;
+    height: 3.1rem;
+    border-radius: 50%;
+    left: -1px;
+    top: 0;
+    border: 2px solid #1DB954;
 }
 
-
-.body-card{
-    max-height: 4rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.menu-icons i:hover {
+    cursor: pointer;
 }
-.body-card h6{
-    color: white !important;
-    font-family: fontBold;
-}
-
-
-/* SHOWS TO TRY */
-
-.shows-card {
-    background-color: #171717;
-    width: 12%;
+/* lists */
+.play-list-head {
+    justify-content: space-between;
     color: #b3b3b3;
+    border-bottom: 1px solid #b3b3b33a;
+    font-size: 0.8rem;
+}
+.list-title {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.4rem;
+}
+.list-title p{
+    margin: 0;
+}
+.list-title span {
+    font-family: fontLight;
+    font-size: 0.8rem;
+}
+
+.play-list-body {
+    margin-top: 0.8rem;
+    justify-content: space-between;
+    color: #b3b3b3;
+    align-items: baseline;
+    font-size: 1rem;
     transition: 0.3s;
 }
-.shows-card:hover {
-    text-decoration: none;
+
+.play-list-body p{
+    margin: 0;
     color: white;
 }
 
-.shows-card .img-card,
-.shows-card .img-card-q{
-    border-radius: 0.6rem !important;
-    overflow: hidden !important;
+.play-list-body small {
+    font-family: fontLight;
 }
-/* PLAY BAR */
+
+
+
+/* ----------------------------------- PLAY BOTTOM BAR */
 
 .play-bar {
     position: fixed;
