@@ -11,13 +11,13 @@ body{
 
 .sidebar-container {
 position: fixed;
-width: 220px;
+width: 20%;
 height: 700px;
 left: 0;
 overflow-x: hidden;
 overflow-y: auto;
 background: #1a1a1a;
-color: #fff;
+color: #C1C1C1;;
 }
 
 
@@ -43,7 +43,7 @@ line-height: 20px;
 .sidebar-navigation li a {
 padding: 10px 15px 10px 30px;
 display: block;
-color: #fff;
+color:#C1C1C1;;
 }
 
 .sidebar-navigation li .fa ,.sidebar-navigation li .fas  {
@@ -92,7 +92,8 @@ background-color: transparent;
 
 
 .content-container {
-padding-left: 220px;
+width: 80%;
+float: right;
 }
 .artist-top-bar {
   display: inline-block;
@@ -186,4 +187,14 @@ padding: 47px 0;box-shadow: -10px 10px 13px 0px #000000;
 }
 .artist-pick-section {
   color: #fff;
+}
+table button {
+  background: transparent;
+  border: none;
+  color: #1DB954;
+    font-size: 23px;
+}
+
+section.static-controller-audio audio{
+  width: 100%;
 }
