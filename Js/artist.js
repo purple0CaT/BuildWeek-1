@@ -29,13 +29,13 @@ let track = document.createElement('audio')
 // all song
 let All_song = [
     {
-        name: 'Keep U Alive',
+        name: 'Doing All Right',
         path: './Audio/NIVIRO - Demons [NCS Release].mp3',
         img: './Images/image-song1.jpg',
         singer: 'Queens'
     },
     {
-        name: 'Doing All Right',
+        name: 'Keep U Alive ',
         path: './Audio/Kalimba.mp3',
         img: './Images/image-song.jpg',
         singer: 'Queens'
