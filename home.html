@@ -508,46 +508,48 @@
 
         <!-- PLAY BAR -->
         <div class="play-bar">
-        <div class="row w-100 h-100">
-            <div class="col-3 d-flex justify-content-start align-items-center left-play">
-                <div class="play-img mr-3">
-                    <img id="titleImg" src="https://source.unsplash.com/random?33" alt="">
-                </div>
-                <div class="play-name align-middle mr-3">
-                    <p id="titleM">Lorem ipsum dolor sit.</p>
-                    <small id="authorM">Lorem</small>
-                </div>
-                <div class="playL-icon d-flex align-items-center">
-                    <a href="#" class="mr-3 text align-items-center d-flex">
-                        <i class="far fa-heart"></i> <!-- change far by fas, to heart fill up-->
-                    </a>
-                    <a href="#" class="mr-3 text align-items-center d-flex"><i class="far fa-window-maximize"></i></a>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="row h-100">
-                    <div class="col-12 play-navigation d-flex justify-content-center align-items-center">
-                        <i class="fas fa-random" id="randomBtn"></i>
-                        <i class="fas fa-step-backward" id="prewBtn"></i>
-                        <i class="fas fa-play-circle" id="playBtn"></i>
-                        <i class="fas fa-step-forward" id="nextBtn"></i>
-                        <i class="fas fa-redo-alt" id="repeatBtn"></i>
+            <div class="row w-100 h-100">
+                <div class="col-3 d-flex justify-content-start align-items-center left-play">
+                    <div class="play-img mr-3">
+                        <img id="titleImg" src="https://source.unsplash.com/random?33" alt="">
                     </div>
-                    <div class="col-12 d-flex justify-content-center align-items-center input-navigation">
-                    <small id="timeStart">00:00</small>
-                    <input class="mx-3" id="durationM" type="range" min="0" max="100" value="15" onchange="durationChange()">
-                    <small id="timeFinish">00:00</small>
+                    <div class="play-name align-middle mr-3">
+                        <p id="titleM">Lorem ipsum dolor sit.</p>
+                        <small id="authorM">Lorem</small>
+                    </div>
+                    <div class="playL-icon d-flex align-items-center">
+                        <a href="#" class="mr-3 text align-items-center d-flex">
+                            <i class="far fa-heart"></i> <!-- change far by fas, to heart fill up-->
+                        </a>
+                        <a href="#" class="mr-3 text align-items-center d-flex"><i class="far fa-window-maximize"></i></a>
+                    </div>
                 </div>
+                <div class="col-6">
+                    <div class="row h-100">
+                        <div class="col-12 play-navigation d-flex justify-content-center align-items-center">
+                            <i class="fas fa-random" id="randomBtn"></i>
+                            <i class="fas fa-step-backward" id="prewBtn"></i>
+                            <i class="fas fa-play-circle" id="playBtn"></i>
+                            <i class="fas fa-step-forward" id="nextBtn"></i>
+                            <i class="fas fa-redo-alt" id="repeatBtn"></i>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center align-items-center input-navigation">
+                        <small id="timeStartH">1</small>
+                        <small id="timeStartM">2</small>
+                        <input class="mx-3" id="durationM" type="range" min="0" max="100" value="0" onchange="durationChange()">
+                        <small id="timeFinishH"></small>
+                        <small id="timeFinishM"></small>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-3 d-flex justify-content-end align-items-center volumeR">
+                    <i class="fas fa-indent"></i>
+                    <i class="fas fa-laptop-house"></i>
+                    <i id="muteM" class="fas fa-volume-up"></i>
+                    <input class="w-25" id="volumeM" type="range" min="0" max="100" value="40" onchange="volChange()" onclick="volChange()">
                 </div>
             </div>
-            <div class="col-3 d-flex justify-content-end align-items-center volumeR">
-                <i class="fas fa-indent"></i>
-                <i class="fas fa-laptop-house"></i>
-                <i id="muteM" class="fas fa-volume-up"></i>
-                <input class="w-25" id="volumeM" type="range" min="0" max="100" value="30" onchange="valumeChange()">
             </div>
-        </div>
-        </div>
 </section>
 
     
@@ -556,6 +558,6 @@
 integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-<script src="js/player.js"></script>
+<script src="js/homeplayer.js"></script>
 </body>
 </html>
