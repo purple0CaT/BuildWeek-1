@@ -23,9 +23,9 @@
       <img src="./Images/logo-spotify.png" width="150px" height="80px">
     </div>
     <ul class="sidebar-navigation">
-      <li class="header">Navigation</li>
+     
       <li>
-        <a href="#">
+        <a href="./home.html">
           <i class="fa fa-home" aria-hidden="true"></i> Homepage
         </a>
       </li>
@@ -170,7 +170,7 @@
           </div>
           <!--heading to play and follow end-->
           <!--Play Music section start-->
-          <div class="row">
+          <div class="row mb-5">
             <!--Playlist section start-->
             <div class="col-8">
               <h4>Popular</h4>
@@ -262,11 +262,55 @@
   </div>
 
 </section>
-<section class="static-controller-audio">
-  <audio controls>
-    <source src="./Audio/NIVIRO - Demons [NCS Release].mp3" />
-   </audio>
-</section>
+<footer class="static-controller-audio">
+  <div class="row w-100 h-100">
+    <div class="col-3 d-flex justify-content-start align-items-center left-play">
+        <div class="play-img mr-3">
+            <img id="titleImg" src="./Images/image-song1.jpg" alt="Demons">
+        </div>
+        <div class="play-name align-middle mr-3">
+            <p id="titleM">Demons</p>
+            <small id="authorM">Queens</small>
+        </div>
+        <div class="playL-icon d-flex align-items-center">
+            <a href="#" class="mr-3 text align-items-center d-flex">
+                <i class="far fa-heart" aria-hidden="true"></i> <!-- change far by fas, to heart fill up-->
+            </a>
+            <a href="#" class="mr-3 text align-items-center d-flex"><i class="far fa-window-maximize" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    
+    <div class="col-6">
+      <div class="row h-100">
+        <div class="col-12 play-navigation d-flex justify-content-center align-items-center">
+            <i class="fas fa-random" id="randomBtn" aria-hidden="true"></i>
+            <i class="fas fa-step-backward" id="prewBtn" aria-hidden="true"></i>
+            <i class="fas fa-play-circle" id="playBtn" aria-hidden="true"></i>
+            <i class="fas fa-step-forward" id="nextBtn" aria-hidden="true"></i>
+            <i class="fas fa-redo-alt" id="repeatBtn" aria-hidden="true"></i>
+        </div>
+        <div class="col-12 d-flex justify-content-center align-items-center input-navigation">
+        <small id="timeStart">00:00</small>
+        <input class="mx-3" id="durationM" type="range" min="0" max="100" value="15" onchange="durationChange()" style="background: linear-gradient(to right, white, 0%, rgb(179, 179, 179) 0%);">
+        <small id="timeFinish">00:00</small>
+    </div>
+    </div>
+    </div>
+    <div class="col-3 d-flex justify-content-end align-items-center volumeR">
+      <i class="fas fa-indent" aria-hidden="true"></i>
+      <i class="fas fa-laptop-house" aria-hidden="true"></i>
+      <i id="muteM" class="fas fa-volume-up" aria-hidden="true"></i>
+      <input class="w-25" id="volumeM" type="range" min="0" max="100" value="30" onchange="valumeChange()" style="background: linear-gradient(to right, white, 30%, rgb(179, 179, 179) 0%);">
+  </div>
+  </div>
+</footer>
+
+
+
+    
+    
+    
+
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -297,17 +341,8 @@
     }, false);
 
 
-  function playsound() {
- let sound_file;
- sound_file = './Audio/sample-audio.mp3'
- var html5_audio = new Audio(sound_file);
- // var html5_audio = new Audio("/html5/html5-audio-example-mp3.mp3");
- html5_audio.play();
-}
-
-
-
   </script>
+  <script src="./js/artist.js"></script>
 </body>
 
 </html>
