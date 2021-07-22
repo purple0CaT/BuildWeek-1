@@ -1,103 +1,4 @@
 
-/* ------------------------------------ MAIN SECTION ARROWS AND LOGIN*/
-
-.h-main {
-    width: calc(100% - 15rem);
-}
-.main-arrows a i{
-    position: relative;
-    font-size: 1.5rem;
-    color: black;
-    opacity: 0.5;
-    transition: 0.5s;
-    border-radius: 50%;
-    background-color: white;
-}
-.main-arrows a i::after {
-    content: '';
-    position: absolute;
-    border: 4px solid black;
-    border-radius: 50%;
-    height: 1.6rem;
-    width: 1.6rem;
-    left: -1px;
-    top: -1px;
-}
-
-.main-arrows a:hover i {
-    opacity: 1;
-}
-.arr-act i{
-    opacity: 1 !important;
-}
-
-.main-arrows a:hover i {
-    opacity: 1;
-    background-color: white;
-}
-
-/* Login button */
-.log-but-par {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    min-width: 50px;
-}
-.login-buttn {
-    position: relative;
-    border: unset;
-    background-color: black;
-    color: #b3b3b3;
-    border-bottom-left-radius: 23px;
-    border-top-left-radius: 23px;
-    padding: 0 !important;
-    align-items: center;
-}
-.login-buttn:hover,
-.press-buttn:hover {
-    color: white;
-}
-
-.login-buttn span {
-    padding-top: 0.2rem;
-    margin: auto 0;
-    font-family: fontBold;
-    color: white;
-}
-.press-buttn::after {
-    margin-top: 10px;
-}
-.login-buttn img{
-    position: relative;
-    display: block;
-    border-radius: 50%;
-    left: 0;
-    width: 30px;
-}
-.press-buttn {
-    border-bottom-right-radius: 23px;
-    border-top-right-radius: 23px;
-
-    background-color: black;
-    color: #b3b3b3;
-}
-
-.dropdown-menu{
-    left: -25% !important;
-    background-color: black;
-    top: 39px !important;
-    transform: translate3d(2.6rem, 0px, 0px)!important;
-}
-.dropdown-menu a {
-    color: #b3b3b3 ;
-}
-
-.dropdown-menu a:hover {
-    background-color: unset;
-    color: white;
-}
-
-
 
 /* -----------------------------------------Content SECTION */
 .album-header {
@@ -132,6 +33,14 @@ padding-top: 0.5rem;
     width: 30px;
     aspect-ratio: 1/1;
     border-radius: 50%;
+}
+.albm-details  a{
+    padding-top: 0.6rem;
+    color: white;
+    transition: 0.3s;
+}
+.albm-details  a:hover{
+    color: #1DB954;
 }
 /* list tracks */
 .tracks-lists {
@@ -168,8 +77,10 @@ padding-top: 0.5rem;
 .menu-icons i:hover {
     cursor: pointer;
 }
-/* lists */
+/* -----------LISTS */
+/* title track */
 .play-list-head {
+    padding: 0 1rem;
     justify-content: space-between;
     color: #b3b3b3;
     border-bottom: 1px solid #b3b3b33a;
@@ -187,14 +98,23 @@ padding-top: 0.5rem;
     font-family: fontLight;
     font-size: 0.8rem;
 }
-
+/* Bodry track */
 .play-list-body {
-    margin-top: 0.8rem;
+    padding: 0 1rem;
+    padding-top: 0.6rem;
     justify-content: space-between;
     color: #b3b3b3;
     align-items: baseline;
     font-size: 1rem;
     transition: 0.3s;
+}
+.play-list-body:hover {
+    background-color: #b3b3b33b ;
+    border-radius: 5px;
+}
+.active-track span,
+.active-track p{
+    color: #1DB352 !important;
 }
 
 .play-list-body p{

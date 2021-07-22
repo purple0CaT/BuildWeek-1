@@ -67,8 +67,8 @@ function load_track(indx){
     title.innerText = All_song[indx].name
     track.load()
 
-    timer = setInterval(rangeSl, 1000)
-    timer = setInterval(barProg, 1000)
+    timer = setInterval(rangeSl, 500)
+    timer = setInterval(barProg, 500)
 
 }
 load_track(0)
