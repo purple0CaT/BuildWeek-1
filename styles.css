@@ -1,0 +1,121 @@
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222326;
+}
+
+h1 {
+  font-size: medium;
+}
+
+#spot-logo {
+  max-height: 50px;
+}
+
+.divider {
+  line-height: 1px;
+  text-align: center;
+}
+
+.divider .divider-title {
+  background: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 0 21px;
+  text-transform: uppercase;
+}
+
+.left-icon-holder {
+  position: relative;
+}
+
+#Remember-me {
+  line-height: 60px;
+}
+
+#chkbox {
+  display: inline-block;
+  width: 16px;
+  height: 60px;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+#submit {
+  border-style: solid;
+  border-radius: 50px;
+  margin-left: 190px;
+  padding: 15px;
+  width: 200px;
+  background-color: #32cd32;
+}
+
+.sep {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#nologin {
+  font-size: medium;
+  text-align: center;
+}
+
+#spotsignup {
+  color: gray;
+  background-color: white;
+}
+
+p {
+  font-size: x-small;
+  color: gray;
+  text-align: center;
+}
+
+.email-form .form-control-lg {
+  width: 525px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+}
+
+.pswrd-form {
+  align-items: center;
+}
+
+.pswrd-form .form-control-lg {
+  width: 525px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+}
+
+.divider-title {
+  overflow: hidden;
+  text-align: center;
+}
+
+.divider-title:before,
+.divider-title:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 14%;
+}
+
+.divider-title::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.divider-title::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.email {
+  flex-direction: column;
+  align-items: center;
+}
