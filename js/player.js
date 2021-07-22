@@ -16,16 +16,7 @@ window.onload = function(){
         })
     }
     load_track(0)
-
-    let Ttimes = document.querySelectorAll('.time small')
-    
-    for (x=0; x<Ttimes.length; x++){
-        let infot = document.createElement('audio')
-        infot.src = All_song[x].path
-        infot.load()
-        Ttimes[x].innerHTML = infot.duration
-    }
-
+    timeChng()
 }
 
 // inputs
@@ -418,5 +409,12 @@ function activeTr (indx){
 
 
 // tracktime
-function loadTTime(){
+function timeChng(){
+    for (r=0; r < All_song.length; r++){
+        let inf = document.createElement('audio')
+        inf.src = All_song[r].path
+        inf.load()
+        console.log(inf)
+        document.querySelectorAll('.time small')[r].innerHTML = inf.duration
+    }
 }
