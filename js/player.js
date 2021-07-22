@@ -120,7 +120,9 @@ playA.addEventListener('click', justPlay)
 next.addEventListener('click', nextSong)
 prew.addEventListener('click', prewSong)
 durat.addEventListener('change', durChange)
+durat.addEventListener('click', durChange)
 volume.addEventListener('change', volChange)
+volume.addEventListener('click', volChange)
 repeat.addEventListener('click', repeatSong)
 mute.addEventListener('click', muteM)
 
@@ -201,7 +203,7 @@ function load_track(indx){
     thisTrack[indx].classList.add('active-track')
     timer = setInterval(rangeSl, 500)
     timer = setInterval(barProg, 500)
-    timer = setInterval(timerRenew, 1000)
+    timer = setInterval(timerRenew, 500)
 }
 
 // timer renewer
