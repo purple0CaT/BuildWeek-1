@@ -413,7 +413,6 @@ function timeChng(){
     for (r=0; r < All_song.length; r++){
         let inf = document.createElement('audio')
         inf.src = All_song[r].path
-        inf.load()
         console.log(inf)
         document.querySelectorAll('.time small')[r].innerHTML = inf.duration
     }
