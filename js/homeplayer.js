@@ -4,7 +4,7 @@ const durat= document.getElementById('durationM')
 const volume = document.getElementById('volumeM')
 const image = document.getElementById('titleImg')
 // button
-const random = document.getElementById('randomBtn')
+const shufle = document.getElementById('randomBtn')
 const prew = document.getElementById('prewBtn')
 const play = document.getElementById('playBtn')
 const next = document.getElementById('nextBtn')
@@ -111,9 +111,24 @@ function load_track(indx){
 
     timer = setInterval(rangeSl, 1000)
     timer = setInterval(barProg, 1000)
+    timer = setInterval(timerRenew, 1000)
 
 }
 load_track(0)
+
+// timer renewer
+function timerRenew () {
+    let curTimeH = document.getElementById('timeStartH')
+    let curTimeM = document.getElementById('timeStartM')
+    curTimeH.innerText = Math.floor(track.currentTime/60) + ':'
+    curTimeM.innerText = Math.floor(track.currentTime%60)
+
+    let timeFinishH = document.getElementById('timeFinishH')
+    let timeFinishM = document.getElementById('timeFinishM')
+    timeFinishH.innerText = Math.floor(track.duration/60) + ':'
+    timeFinishM.innerText = Math.floor(track.duration%60)
+
+}
 
 
 // play check

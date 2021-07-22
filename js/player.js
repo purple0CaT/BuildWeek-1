@@ -1,5 +1,7 @@
 let thisTrack
 let thisOneT
+
+
 window.onload = function(){
     activeTr()
     thisTrack[0].classList.add('active-track')
@@ -13,6 +15,17 @@ window.onload = function(){
             trcks.classList.add('active-track')
         })
     }
+    load_track(0)
+
+    let Ttimes = document.querySelectorAll('.time small')
+    
+    for (x=0; x<Ttimes.length; x++){
+        let infot = document.createElement('audio')
+        infot.src = All_song[x].path
+        infot.load()
+        Ttimes[x].innerHTML = infot.duration
+    }
+
 }
 
 // inputs
@@ -170,12 +183,6 @@ function createList(j){
     time.classList.add('time')
     let timeRight = document.createElement('small')
 
-    let trackDur = document.createElement('audio')
-    trackDur.src = All_song[j].path
-    trackDur.load()
-
-    timeRight.innerText = Math.floor(trackDur.duration)
-    console.log(trackDur.duration)
     time.appendChild(timeRight)
 
     // merging
@@ -197,12 +204,14 @@ function load_track(indx){
     title.innerText = All_song[indx].name
     track.load()
     
+    for (let trcks of thisTrack){
+        trcks.classList.remove('active-track')
+    }
+    thisTrack[indx].classList.add('active-track')
     timer = setInterval(rangeSl, 500)
     timer = setInterval(barProg, 500)
     timer = setInterval(timerRenew, 1000)
-
 }
-load_track(0)
 
 // timer renewer
 function timerRenew () {
@@ -274,19 +283,40 @@ function prewSong (){
 
 }
 
-// SHUFLE
+// -------SHUFLE LISTENER
 shufle.addEventListener('click', shufleIt)
 let shufleM = 0
-let shufleLibr
+let randM = 0
+let sLibr = []
+
 function shufleIt(){
-if(shufleM == 0){
+    if(shufleM == 0){
+        shufle.style.color = '#1DB954'
+        shufleM = 1
+        for (j=0; j < All_song.length; j++){
+            randomM()
+            while (sLibr.includes(randM) == true){
+                randomM()
+            }
+            sLibr.push(randM)
+        }
+    } else {
+        sLibr = []
+        shufleM = 0
+        shufle.style.color = '#b3b3b3'
+    }
+    console.log(sLibr)
+}
+function shufleMus (){
+    let shuflTrack = sLibr[indx]
+    load_track(shuflTrack)
+    playSong()
 
-} else {
-    
 }
 
+function randomM(){
+    randM = Math.floor(Math.random()*((All_song.length+1)-0)+0)
 }
-
 
 
 // Duration change
@@ -296,25 +326,20 @@ function barProg() {
     durat.style.background = `linear-gradient(to right, white, ${percent}%, #b3b3b3 0%)`
     volume.style.background = `linear-gradient(to right, white, ${volume.value}%, #b3b3b3 0%)`
 }
-
 function durChange(){
     let slider = track.duration * (durat.value / 100)
     track.currentTime = slider
     durat.style.background = `linear-gradient(to right, white, ${durat.value}%, #b3b3b3 0%)`
-
 }
-
 
 // slider range
 function rangeSl(){
     let position = 0
-
         // update slider position
         if (!isNaN(track.duration)){
             position = track.currentTime * (100 / track.duration )
             durat.value = position
         }
-
         if (track.ended){
             play.classList.remove('fa-pause')
             play.classList.add('fa-play-circle')
@@ -329,7 +354,6 @@ function rangeSl(){
 
 // MUTE
 let trackVol = 0
-
 function muteM (){
     if (muteSong == 0 ){
         muteSong = 1
@@ -354,14 +378,14 @@ function muteM (){
         break;
     }
 }
-
+// Vol Change
 function volChange(){
     track.volume = volume.value / 100
     trackVol = volume.value
     volume.style.background = `linear-gradient(to right, white, ${volume.value}%, #b3b3b3 0%)`
 }
 
-
+// repeat
 function repeatSong(){
     if (autoplay==1){
         autoplay = 0 
@@ -369,11 +393,8 @@ function repeatSong(){
     } else {
         autoplay=1
         repeat.style.color = "#1DB352"
-
     }
 }
-
-
 // reseting slider
 function resetSlider (){
     durat.value = 0
@@ -393,8 +414,9 @@ for (j=0; 0 < songLeng; j++){
 
 function activeTr (indx){
     thisTrack = document.querySelectorAll('.play-list-body')
-    thisOneT = thisTrack[indx]
-    // thisOne.classList.add('active-track')
 }
 
 
+// tracktime
+function loadTTime(){
+}
