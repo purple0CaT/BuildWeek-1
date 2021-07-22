@@ -1,18 +1,36 @@
+let thisTrack
+let thisOneT
+window.onload = function(){
+    activeTr()
+    thisTrack[0].classList.add('active-track')
+    for(let trcks of thisTrack){
+        trcks.addEventListener('click', function(){
+            for(let delA of thisTrack){
+                delA.classList.remove('active-track')
+            }
+            load_track(trcks.getAttribute('value'))
+            playSong()
+            trcks.classList.add('active-track')
+        })
+    }
+}
 
 // inputs
 const durat= document.getElementById('durationM')
 const volume = document.getElementById('volumeM')
 const image = document.getElementById('titleImg')
-// button
-const random = document.getElementById('randomBtn')
+
+
+// Player button
+const shufle = document.getElementById('randomBtn')
 const prew = document.getElementById('prewBtn')
 const play = document.getElementById('playBtn')
+const playA = document.getElementById('playA')
 const next = document.getElementById('nextBtn')
 const repeat = document.getElementById('repeatBtn')
 const mute = document.getElementById('muteM')
 const title = document.getElementById('titleM')
 const author = document.getElementById('authorM')
-
 // list
 
 
@@ -26,29 +44,75 @@ let muteSong = 0
 
 // music libr
 let track = document.createElement('audio')
+
 // all song
 let All_song = [
     {
-        name: 'Peaky Blinders',
-        path: 'music/1.mp3',
-        img: 'https://pbs.twimg.com/profile_images/1159601095309758465/hdjeX4rS_400x400.jpg',
-        singer: 'Someone'
+        name: 'Somebody to love',
+        path: 'music/bh_02.mp3',
+        img: 'https://fresh-song.ru/uploads/posts/2018-10/1540027773_cover.jpg',
+        singer: 'Queen',
     },
     {
-        name: 'My Number',
-        path: 'music/2.mp3',
-        img: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/52/My_Number_Single.jpg/220px-My_Number_Single.jpg',
-        singer: 'Foals'
+        name: 'Doing all Right',
+        path: 'music/bh_03.mp3',
+        img: 'https://fresh-song.ru/uploads/posts/2018-10/1540027773_cover.jpg',
+        singer: 'Queen',
     },
     {
-        name: 'Poison Lips',
-        path: 'music/3.mp3',
-        img: 'https://i1.sndcdn.com/artworks-000007961708-2vseje-t500x500.jpg',
-        singer: 'Vitalic'
+        name: 'Keep Yourself Alive',
+        path: 'music/bh_04.mp3',
+        img: 'https://fresh-song.ru/uploads/posts/2018-10/1540027773_cover.jpg',
+        singer: 'Queen',
+    },
+    {
+        name: 'Killer Queen',
+        path: 'music/bh_05.mp3',
+        img: 'https://fresh-song.ru/uploads/posts/2018-10/1540027773_cover.jpg',
+        singer: 'Queen',
+    },
+    {
+        name: 'Fat Bottomed Girls',
+        path: 'music/bh_06.mp3',
+        img: 'https://fresh-song.ru/uploads/posts/2018-10/1540027773_cover.jpg',
+        singer: 'Queen',
+    },
+    {
+        name: 'Bohemian Rhapsody',
+        path: 'music/bh_07.mp3',
+        img: 'https://fresh-song.ru/uploads/posts/2018-10/1540027773_cover.jpg',
+        singer: 'Queen',
+    },
+    {
+        name: "Now I'm Here",
+        path: 'music/bh_08.mp3',
+        img: 'https://fresh-song.ru/uploads/posts/2018-10/1540027773_cover.jpg',
+        singer: 'Queen',
+    },
+    {
+        name: "Crazy Little Thing Called Love",
+        path: 'music/bh_09.mp3',
+        img: 'https://fresh-song.ru/uploads/posts/2018-10/1540027773_cover.jpg',
+        singer: 'Queen',
+    },
+    {
+        name: "Lofe of My Life",
+        path: 'music/bh_10.mp3',
+        img: 'https://fresh-song.ru/uploads/posts/2018-10/1540027773_cover.jpg',
+        singer: 'Queen',
+    },
+    {
+        name: "We Will Rock You",
+        path: 'music/bh_11.mp3',
+        img: 'https://fresh-song.ru/uploads/posts/2018-10/1540027773_cover.jpg',
+        singer: 'Queen',
     },
 ]
+
+
 // event listener 
 play.addEventListener('click', justPlay)
+playA.addEventListener('click', justPlay)
 next.addEventListener('click', nextSong)
 prew.addEventListener('click', prewSong)
 durat.addEventListener('change', durChange)
@@ -56,8 +120,74 @@ volume.addEventListener('change', volChange)
 repeat.addEventListener('click', repeatSong)
 mute.addEventListener('click', muteM)
 
-// Functions 
-// LOAD
+
+// Functions creating list of music
+function createList(j){
+    let anchor = document.createElement('a')
+    anchor.classList.add('play-list-body')
+    anchor.classList.add('d-flex')
+    anchor.classList.add('align-items-center')
+    anchor.setAttribute('value',`${j}`)
+
+    let firstDiv = document.createElement('div')
+    firstDiv.classList.add('d-flex')
+    firstDiv.classList.add('list-title')
+
+        // inside first div
+        let fdiv1Div = document.createElement('div')
+        fdiv1Div.classList.add('d-flex')
+        fdiv1Div.classList.add('align-items-center')
+        
+            // song number
+            let fdiv1DivDiv = document.createElement('div')
+            fdiv1DivDiv.classList.add('d-flex')
+            fdiv1DivDiv.classList.add('align-items-center')
+            
+            let fdiv1DivSpan = document.createElement('span')
+            fdiv1DivSpan.innerText = j + 1
+
+            fdiv1DivDiv.appendChild(fdiv1DivSpan)
+            fdiv1Div.appendChild(fdiv1DivDiv)
+            firstDiv.appendChild(fdiv1Div)
+
+        // second div
+        let fdiv2Div = document.createElement('div')
+        fdiv2Div.classList.add('d-flex')
+        fdiv2Div.classList.add('flex-column')
+        fdiv2Div.classList.add('align-items-start')
+
+            // creating p and small
+            let fdiv2DivP = document.createElement('p')
+            fdiv2DivP.innerText = All_song[j].name
+            let fdiv2DivSm = document.createElement('small')
+            fdiv2DivSm.innerText = All_song[j].singer
+            fdiv2Div.appendChild(fdiv2DivP)
+            fdiv2Div.appendChild(fdiv2DivSm)
+            firstDiv.appendChild(fdiv2Div)
+
+    // time section
+    let time = document.createElement('div')
+    time.classList.add('time')
+    let timeRight = document.createElement('small')
+
+    let trackDur = document.createElement('audio')
+    trackDur.src = All_song[j].path
+    trackDur.load()
+
+    timeRight.innerText = Math.floor(trackDur.duration)
+    console.log(trackDur.duration)
+    time.appendChild(timeRight)
+
+    // merging
+    anchor.appendChild(firstDiv)
+    anchor.appendChild(time)
+    lists.appendChild(anchor)
+
+    // bug fix>??????
+}
+
+
+// -------------LOAD MUSICCCCC
 function load_track(indx){
     clearInterval(timer)
     resetSlider()
@@ -66,13 +196,27 @@ function load_track(indx){
     author.innerText = All_song[indx].singer
     title.innerText = All_song[indx].name
     track.load()
-
+    
     timer = setInterval(rangeSl, 500)
     timer = setInterval(barProg, 500)
+    timer = setInterval(timerRenew, 1000)
 
 }
 load_track(0)
 
+// timer renewer
+function timerRenew () {
+    let curTimeH = document.getElementById('timeStartH')
+    let curTimeM = document.getElementById('timeStartM')
+    curTimeH.innerText = Math.floor(track.currentTime/60) + ':'
+    curTimeM.innerText = Math.floor(track.currentTime%60)
+
+    let timeFinishH = document.getElementById('timeFinishH')
+    let timeFinishM = document.getElementById('timeFinishM')
+    timeFinishH.innerText = Math.floor(track.duration/60) + ':'
+    timeFinishM.innerText = Math.floor(track.duration%60)
+
+}
 
 // play check
 function justPlay(){
@@ -88,6 +232,9 @@ function playSong(){
     playingSong = true
     play.classList.remove('fa-play-circle')
     play.classList.add('fa-pause')
+    playA.classList.remove('fa-play-circle')
+    playA.classList.add('fa-pause')
+
 
 }
 // pause
@@ -96,11 +243,12 @@ function pauseSong(){
     playingSong = false
     play.classList.remove('fa-pause')
     play.classList.add('fa-play-circle')
+    playA.classList.remove('fa-pause')
+    playA.classList.add('fa-play-circle')
 
 }
 
 // next song
-
 function nextSong (){
     if (indx < All_song.length-1){
         indx += 1
@@ -125,6 +273,22 @@ function prewSong (){
     }
 
 }
+
+// SHUFLE
+shufle.addEventListener('click', shufleIt)
+let shufleM = 0
+let shufleLibr
+function shufleIt(){
+if(shufleM == 0){
+
+} else {
+    
+}
+
+}
+
+
+
 // Duration change
 function barProg() {
     let percent
@@ -134,7 +298,6 @@ function barProg() {
 }
 
 function durChange(){
-
     let slider = track.duration * (durat.value / 100)
     track.currentTime = slider
     durat.style.background = `linear-gradient(to right, white, ${durat.value}%, #b3b3b3 0%)`
@@ -215,3 +378,23 @@ function repeatSong(){
 function resetSlider (){
     durat.value = 0
 }
+
+
+// creating music librbry
+const lists = document.querySelector('.play-list')
+let songLeng = All_song.length
+for (j=0; 0 < songLeng; j++){
+    createList(j)
+}
+
+// active track
+// listener
+
+
+function activeTr (indx){
+    thisTrack = document.querySelectorAll('.play-list-body')
+    thisOneT = thisTrack[indx]
+    // thisOne.classList.add('active-track')
+}
+
+

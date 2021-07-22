@@ -48,6 +48,7 @@ padding-top: 0.5rem;
     background-color: rgba(0, 0, 0, 0.158);
     width: 100%;
     padding: 2rem;
+    padding-bottom: 5rem !important;
 }
 .menu-icons i {
     color: #b3b3b3;
@@ -56,14 +57,17 @@ padding-top: 0.5rem;
 .play-alb {
     position: relative;
 }
+.menu-icons .fa-play-circle {
+    background-color: white;
+    color: #1DB954 !important;
+}
 .menu-icons i:first-child {
     position: relative;
-    color: #1DB954;
-    background-color: white;
     border-radius: 50%;
+    color: white;
     font-size: 3rem;
 }
-.menu-icons i:first-child::after {
+.menu-icons .fa-play-circle::after {
     position: absolute;
     content: "";
     width: 3.1rem;
