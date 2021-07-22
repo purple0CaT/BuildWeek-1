@@ -242,6 +242,7 @@ img {
     border-bottom-left-radius: 23px;
     border-top-left-radius: 23px;
     padding: 0 !important;
+    justify-content: flex-start;
     align-items: center;
 }
 .login-buttn:hover,
@@ -250,10 +251,9 @@ img {
 }
 
 .login-buttn span {
-    padding-top: 0.2rem;
-    margin: auto 0;
     font-family: fontBold;
     color: white;
+    padding-top: 0.6rem !important;
 }
 .press-buttn::after {
     margin-top: 10px;

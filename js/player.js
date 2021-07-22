@@ -195,7 +195,7 @@ function muteM (){
 function volChange(){
     track.volume = volume.value / 100
     trackVol = volume.value
-
+    volume.style.background = `linear-gradient(to right, white, ${volume.value}%, #b3b3b3 0%)`
 }
 
 
