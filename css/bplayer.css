@@ -1,0 +1,130 @@
+/* PLAY BAR */
+
+.play-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: #181818;
+    padding: 0.6rem;
+}
+.left-play {
+    height: 100%;
+}
+.play-img {
+    
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.play-img img {
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.play-name p {
+    position: relative;
+    bottom: 0;
+    color: white !important;
+    margin: 0;
+    font-family: fontBold;
+    font-size: 0.8rem;
+}
+.play-name small {
+    font-size: 0.7rem;
+
+    display: block;
+    color: #b3b3b3 !important;
+}
+
+.playL-icon a {
+    color: #b3b3b3;
+    transition: 0.3s;
+}
+.playL-icon i:hover {
+    color: #1DB352;
+}
+/* middle section */
+.play-navigation {
+    color: #b3b3b3;
+    gap: 3rem;
+}
+
+.play-navigation i {
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+.play-navigation i:hover {
+    cursor: pointer;
+    color: #1DB352 !important;
+}
+
+.play-navigation i:nth-child(3) {
+    font-size: 1.6rem;
+    color: white;
+}
+
+.input-navigation small {
+    color: white !important;
+    padding-top: 0.4rem;
+    font-size: 0.7rem;
+}
+input[type="range"],
+.dur-bar {
+    -webkit-appearance: none !important;
+    width: 70%;
+    background: linear-gradient(to right, white, 1%, #b3b3b3 0%);
+    height: 4px;
+    border-radius: 25px;
+}
+
+input[type="range"]::-webkit-slider-thumb,
+.dur-bar::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    height: 4px;
+    width: 8px;
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+}
+input[type="range"]::-webkit-progress-bar,
+.dur-bar::-webkit-progress-bar {
+    -webkit-appearance: none !important;
+    background-color: white;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb,
+.dur-bar:hover::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #1DB352;
+    position: relative;
+    transition: 0.2s;
+
+}
+
+.dur-bar::-webkit-range-thumb { 
+    -webkit-appearance: none !important;
+    color: white;
+}
+
+.dur-bar {
+    -webkit-appearance: none;
+    color: black !important;
+}
+
+/* volume Right*/
+.volumeR {
+    gap: 1rem;
+}
+.volumeR i {
+    color: #b3b3b3;
+    transition: 0.3s;
+}
+
+.volumeR i:hover {
+    color: #1DB352;
+    cursor: pointer;
+}
