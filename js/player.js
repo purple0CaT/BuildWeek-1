@@ -1,50 +1,3 @@
-let audio_info = document.getElementById('audio1');
-document.getElementById('play').addEventListener('click', function () {
-  audio_info.play();
-}, false);
-//
-document.getElementById('stop').addEventListener('click', function () {
-  audio_info.pause();
-}, false);
-
-let audio2_info = document.getElementById('audio2');
-document.getElementById('play2').addEventListener('click', function () {
-  audio2_info.play();
-}, false);
-console.log('2 plau')
-//
-document.getElementById('stop2').addEventListener('click', function () {
-  audio2_info.pause();
-}, false);
-
-
-// inputs
-const durat= document.getElementById('durationM')
-const volume = document.getElementById('volumeM')
-const image = document.getElementById('titleImg')
-// button
-const random = document.getElementById('randomBtn')
-const prew = document.getElementById('prewBtn')
-const play = document.getElementById('playBtn')
-const next = document.getElementById('nextBtn')
-const repeat = document.getElementById('repeatBtn')
-const mute = document.getElementById('muteM')
-const title = document.getElementById('titleM')
-const author = document.getElementById('authorM')
-
-// list
-
-
-// const
-let timer
-let indx = 0
-let autoplay = 0
-let playingSong = false
-let muteSong = 0
-
-
-// music libr
-let track = document.createElement('audio')
 // all song
 let All_song = [
     {
@@ -66,6 +19,76 @@ let All_song = [
         singer: 'Vitalic'
     },
 ]
+
+let thisTrack
+let thisOneT
+
+window.onload = function(){
+    activeTr()
+    thisTrack[indx].classList.add('active-track')
+    for(let trcks of thisTrack){
+
+        trcks.addEventListener('click', function(){
+            if(playingSong == false){
+                playingSong = true
+            for(let delA of thisTrack){
+                delA.classList.remove('active-track')
+            }
+            load_track(trcks.getAttribute('value'))
+            playSong()
+            trcks.classList.add('active-track')
+        } else {
+            playingSong = false
+            pauseSong()
+        }
+        })
+    }
+    load_track(0)
+    timeChng()
+
+    // tracktime
+function timeChng(){
+    let inf = document.createElement('audio')
+    for (r=0; r < All_song.length; r++){
+        inf.src = All_song[r].path
+        inf.load()
+        document.querySelectorAll('.time small')[r].innerText = `${inf.duration}`
+    }
+}
+}
+
+// inputs
+const durat= document.getElementById('durationM')
+const volume = document.getElementById('volumeM')
+const image = document.getElementById('titleImg')
+
+
+// Player button
+const shufle = document.getElementById('randomBtn')
+const prew = document.getElementById('prewBtn')
+const play = document.getElementById('playBtn')
+const playA = document.getElementById('playA')
+const next = document.getElementById('nextBtn')
+const repeat = document.getElementById('repeatBtn')
+const mute = document.getElementById('muteM')
+const title = document.getElementById('titleM')
+const author = document.getElementById('authorM')
+// list
+
+
+// const
+let timer
+let indx = 0
+let autoplay = 0
+let playingSong = false
+let muteSong = 0
+
+
+// music libr
+let track = document.createElement('audio')
+
+
+
 // event listener 
 play.addEventListener('click', justPlay)
 next.addEventListener('click', nextSong)
@@ -122,28 +145,102 @@ function pauseSong(){
 
 function nextSong (){
     if (indx < All_song.length-1){
-        indx += 1
-        load_track(indx)
-        playSong()
+        if (shufleM == 1){
+            shufleMus()
+            load_track(indx)
+            playSong()    
+        } else {
+            indx += 1
+            load_track(indx)
+            playSong()    
+        }
     } else {
-        indx = 0
-        load_track(indx)
-        playSong()
+        if (shufleM == 1){
+            shufleMus()
+            load_track(indx)
+            playSong()    
+        } else {
+            indx = 0
+            load_track(indx)
+            playSong()
+        }
     }
 }
 // prew song
 function prewSong (){
     if (indx > 0){
-        indx -= 1
-        load_track(indx)
-        playSong()
+        if (shufleM == 1){
+            shufleMusB()
+            load_track(indx)
+            playSong()
+        } else {
+            
+            indx -= 1
+            load_track(indx)
+            playSong()
+        }
     } else {
-        indx = All_song.length
-        load_track(indx)
-        playSong()
+        if (shufleM == 1){
+            shufleMusB()
+            load_track(indx)
+            playSong()
+        } else {      
+            indx = All_song.length
+            load_track(indx)
+            playSong()
+        }
     }
 
 }
+
+// -------SHUFLE LISTENER
+shufle.addEventListener('click', shufleIt)
+let shufleM = 0
+let randM = 0
+let sLibr = []
+let bLibr = []
+let xIndx = -1
+let yIndx = -1
+
+function shufleIt(){
+    if(shufleM == 0){
+        shufle.style.color = '#1DB954'
+        shufleM = 1
+        for (j=0; j < All_song.length; j++){
+            randomM()
+            while (sLibr.includes(randM) == true){
+                randomM()
+            }
+            sLibr.push(randM)
+            bLibr.unshift(randM)
+        }
+    } else {
+        sLibr = []
+        shufleM = 0
+        shufle.style.color = '#b3b3b3'
+    }
+    console.log(sLibr)
+    shufleMus()
+    console.log(bLibr)
+}
+// shufle netx
+function shufleMus(){
+    xIndx = xIndx + 1
+    console.log(xIndx)
+    indx = sLibr[xIndx]
+}
+// shufle previous
+function shufleMusB(){
+    yIndx = yIndx + 1
+    console.log(yIndx)
+    indx = bLibr[yIndx]
+}
+
+function randomM(){
+    randM = Math.floor(Math.random()*(All_song.length-0)+0)
+}
+
+
 // Duration change
 function barProg() {
     let percent
@@ -175,9 +272,15 @@ function rangeSl(){
             play.classList.remove('fa-pause')
             play.classList.add('fa-play-circle')
             if (autoplay==1){
-                indx +=1
-                load_track(indx)
-                playSong()
+                if (shufleM == 1){
+                    shufleMus()
+                    load_track(indx)
+                    playSong()
+                } else {
+                    indx +=1
+                    load_track(indx)
+                    playSong()
+                }
             }
         }
 }
@@ -234,3 +337,21 @@ function repeatSong(){
 function resetSlider (){
     durat.value = 0
 }
+
+
+// creating music librbry
+const lists = document.querySelector('.play-list')
+let songLeng = All_song.length
+for (j=0; 0 < songLeng; j++){
+    createList(j)
+}
+
+// active track
+// listener
+
+
+function activeTr (indx){
+    thisTrack = document.querySelectorAll('.play-list-body')
+}
+
+
