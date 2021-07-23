@@ -27,7 +27,7 @@ img {
 /* FOnt link */
 
 .home-page {
-    min-height: 100vh;
+    height: 100vh;
 }
 .h-clr {
     background: rgb(63,7,6);
