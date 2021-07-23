@@ -1,12 +1,24 @@
-html{
-  height: 100%;
-  
+html {
+  width: unset !important;
+  height: unset !important;
 }
 body{
+  height: 100vh;
+  width: 100wh;
   font-family: Circular,Helvetica,Arial,sans-serif;
   margin: 0;
- background-image: linear-gradient(#212c39,#121e3d 50%,#000);
  scroll-behavior: smooth;
+}
+
+.home-page {
+  background-image: linear-gradient(#212c39,#121e3d 20%,#000) !important;
+}
+
+.navig-log {
+  width: 85%;
+  position: absolute;
+  justify-content: space-between;
+  flex-wrap: nowrap !important;
 }
 
 .sidebar-container {
@@ -123,15 +135,20 @@ float: right;
   box-shadow: -10px 10px 13px 0px #000000;
 }
 .heading-artist {
-  padding-top: 16%;
-  padding-left: 20px;
+  padding:16% 1rem 0 1rem;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-items: baseline;
 }
-.heading-artist .icon-verified{font-size:23px; line-height: 39px;}
-.icon-verified i{color:#2579C4; font-size: 23px; margin-right: 12px;}
+.heading-artist .icon-verified{
+  font-size:23px; 
+  line-height: 39px;
+}
+.icon-verified i{
+  color:#2579C4; font-size: 23px; 
+  margin-right: 12px;
+}
 .heading-artist h1 {
   font-size: 4.5rem;
 }
