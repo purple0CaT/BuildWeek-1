@@ -5,7 +5,7 @@ html {
 body{
   scroll-behavior: smooth;
   height: 100vh !important;
-
+  width: 100vw !important;
 }
 
 .home-page {
@@ -350,7 +350,7 @@ input[type="range"]:hover::-webkit-slider-thumb,
 
 
 /*Media Queries*/
-
+/* 
 @media  (max-width: 1370px) and  (min-width:1024px) {
   .sidebar-logo img {
     width: 9.4rem;
@@ -362,4 +362,4 @@ input[type="range"]:hover::-webkit-slider-thumb,
   .col-4.artist-pick {
     display: none;
 }
-}
+} */
