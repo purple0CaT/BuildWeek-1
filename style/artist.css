@@ -112,7 +112,7 @@ width: 80%;
 float: right;
 } */
 .artist-top-bar {
-  display: inline-block;
+ 
   background-image: url(./../Images/queen-background.jpg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
   width: 100%;
   height: auto;
@@ -189,7 +189,7 @@ box-shadow: -10px 10px 13px 0px #000000;
 }
 #static-playlist-design table {
   border-collapse: collapse;
-  font-size: 1.2rem;
+  font-size: 16px;
   font-weight: 600;
   line-height: 4.4rem;
 }
@@ -207,6 +207,7 @@ box-shadow: -10px 10px 13px 0px #000000;
 }
 .artist-pick-section {
   color: #fff;
+  font-size: 15px;
 }
 table button {
   background: transparent;
@@ -357,7 +358,11 @@ input[type="range"]:hover::-webkit-slider-thumb,
 }
 }
 */
-
+@media(max-width:1150px) and(min-width:900px){
+  #static-playlist-design table {
+    font-size: 15px;
+}
+}
 @media (max-width:1041px) and (min-width:850px){
   .col-4.artist-pick {
     display: none;
