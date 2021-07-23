@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel = "icon" href ="https://img.icons8.com/material/48/000000/spotify--v1.png" 
+        type = "image/x-icon">
+
+    <script src="https://kit.fontawesome.com/0b1116b0b9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/bplayer.css">
+    <link rel="stylesheet" href="style/artist.css">
+</head>
+<body>
+<section class="home-page d-flex">
+    <!-- side bar -->
+    <div class="side-bar">    
+        <div class="h-side-bar">
+            <div class="h-logo d-flex">
+                <div>
+                <i class="fab fa-spotify"></i>
+                </div>
+                <a href="home.html">
+                    <h4>Spotify</h4>
+                </a>
+            </div>
+            <!-- home links -->
+            <div class="sd-links">
+                <a href="home.html" class="d-flex">
+                    <i class="fas fa-home"></i> 
+                    <span>Home</span></a>
+                <a href="#" class="d-flex">
+                    <i class="fas fa-search"></i> 
+                    <span>Search</span></a>
+                <a href="#" class="d-flex active">
+                    <i class="fas fa-align-left"></i> 
+                    <span>Your library</span></a>
+                
+            </div>
+            <br>
+            <!-- liked and playlists -->
+            <div class="playlists">
+                <a href="#" class="d-flex">
+                    <div class="img-icon">
+                        <i class="fas fa-square-full"></i>
+                    </div> 
+                    <span>Create Playlist</span></a>
+                <a href="#" class="d-flex">
+                    <div class="heart-ico">
+                        <i class="fas fa-heart"></i> 
+                    </div>
+                    <span>Liked Songs</span></a>
+            </div>
+        </div>
+        <!-- side bar tracks scroll -->
+        <div class="side-bar-bottom">
+            <div class="side-tracks">
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Funky Heavy Bluesy</p>
+                    <i class="fas fa-user-friends"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Rammstein</p>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Queen</p>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>AC/DC</p>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Vitalic</p>
+                    <i class="fas fa-user-friends"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Boney M</p>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Madonna</p>
+                    <i class="fas fa-user-friends"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Red Hot Chili Peppers</p>
+                    <i class="fas fa-user-friends"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Kizaru</p>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>KINO</p>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Jain</p>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Muse</p>
+                    <i class="fas fa-user-friends"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Magic Sword</p>
+                    <i class="fas fa-user-friends"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>The Knife</p>
+                    <i class="fas fa-user-friends"></i>
+                </a>
+                <a href="#" class="d-flex justify-content-between">
+                    <p>Dance With the Dead</p>
+                    <i class="fas fa-user-friends"></i>
+                </a>
+
+            </div>
+            <br>
+          
+            <br>
+            <div class="download">
+              <a href="#" class="d-flex justify-content-start side-download">
+                <i class="far fa-arrow-alt-circle-down mr-2"></i>
+                <p>Install App</p>
+            </a>
+            </div>
+        </div>
+    </div>
+    <!-- MAIN CONTENT SECTION -->
+        <div class="h-main px-3 mt-n4">
+                <div class="row navig-log mt-5 px-5">
+                    <!-- arrows -->
+                    <div class="col-1 d-flex justify-content-start main-arrows">
+                        <a class="mr-3 arr-act" href="home.html"><i class="fas fa-chevron-circle-left"></i></a>
+                        <a href="#"><i class="fas fa-chevron-circle-right"></i></a>
+                    </div>
+                    <!-- space col -->
+                    <div class="col-9 d-none d-md-block"></div>
+                    <!-- login acc -->
+                    <div class="col-2">
+                        <div class="btn-group log-but-par">
+                            <a href="index.html" class="btn btn-sm login-buttn d-flex" type="button">
+                                <img src="img/spotify.ico" class="mr-2" alt="">
+                                <span class="">  Diego </span>
+                            </a>
+                            <button type="button" class="btn btn-sm press-buttn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Settings</a>
+                                <a class="dropdown-item" href="#">Payment</a>
+                                <a class="dropdown-item" href="#">Premium</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <br>
+                <!-- album cover -->
+                <div class="heading-artist mx-2 px-3" style=" background-image: url('Images/queen-background.jpg');
+                ">
+
+                    <p class="icon-verified"><i class="bi bi-patch-check-fill"></i>Verified Artists</p>
+                    <h1>Queens</h1>
+                    <p>37,120,733 monthly listners</p>
+                  <!--Heading end-->
+                </div>
+                <div class="mx-2">
+                    <!--top heading start-->
+
+                    <!--top heading end-->
+                    <!--Static design for playlist start-->
+                    <section id="static-playlist-design">
+                      <div class="px-4">
+                        <!--heading to play and follow start-->
+                        <div class="play-static">
+                          <button type="button" class="btn"><i class="fas fa-play-circle"></i></button>
+                          <button type="button" class="btn follow ">Follow</button>
+                          <button type="button" class="btn "><i class="bi bi-three-dots"></i></button>
+                        </div>
+                        <!--heading to play and follow end-->
+                        <!--Play Music section start-->
+                        <div class="row mb-5">
+                          <!--Playlist section start-->
+                          <div class="col-8  ">
+                            <h4>Popular</h4>
+                            <!--table start-->
+                            <table class="text-white w-100">
+              
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td class="ml-2"><img src="./Images/image-song.jpg" alt="sample-image">&nbsp;&nbsp; Keep Yourself
+                                    Alive
+                                    <audio id="audio2">
+                                      <source src="./Audio/sample_audio.mp3" />
+                                    </audio> <button id="play2"><i class="bi bi-play-fill play"></i></button> &nbsp;<button
+                                      id="stop2"><i class="bi bi-pause-fill pause"></i></button>
+                                  </td>
+                                  <td>1,23,080,00</td>
+                                  <td>2:59</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td class="ml-2"><img src="./Images/image-song1.jpg" alt="sample-image">&nbsp;&nbsp; Doing All Right
+                                    ime <audio id="audio1">
+                                      <source src="./Audio/Kalimba.mp3" />
+                                      </audio> <button id="play"><i class="bi bi-play-fill play"></i></button> &nbsp;<button id="stop"><i class="bi bi-pause-fill pause"></i></button> </td>
+              
+                                  <td>1,23,080,00</td>
+                                  <td>2:59</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td class="ml-2"><img src="./Images/image-song.jpg" alt="sample-image">&nbsp;&nbsp; The Night Comes
+                                    Down</td>
+                                  <td>1,23,080,00</td>
+                                  <td>2:59</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">4</th>
+                                  <td class="ml-2"><img src="./Images/image-song1.jpg" alt="sample-image">&nbsp;&nbsp; Modern Times
+                                    Rock 'N' Roll</td>
+                                  <td>1,23,080,00</td>
+                                  <td>2:59</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">5</th>
+                                  <td class="ml-2"><img src="./Images/image-song.jpg" alt="sample-image">&nbsp;&nbsp; Seven Seas of
+                                    Rhye</td>
+                                  <td>1,23,080,00</td>
+                                  <td>2:59</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">6</th>
+                                  <td class="ml-2"><img src="./Images/image-song1.jpg" alt="sample-image">&nbsp;&nbsp; Liar</td>
+                                  <td>1,23,080,00</td>
+                                  <td>2:59</td>
+                                </tr>
+              
+                              </tbody>
+                            </table>
+                            <!--table end-->
+                          </div>
+                          <!--Playlist section end-->
+                          <!--song display details start-->
+                          <div class="col-4 artist-pick">
+                            <h4> Artists Pick</h4>
+                            <div class="row">
+                              <div class="col">
+              
+                                <img src="./Images/image-song.jpg" alt="sample" width="150px" height="150px">
+                              </div>
+                              <div class="col">
+                                <div class="artist-pick-section">
+                                  <p>Posted By Queen</p>
+                                  <h5> Queen Best Of</h5>
+                                  <p>Playlist</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--song display details end-->
+                        </div>
+                        <!--Play Music section end-->
+              
+                      </div>
+                  </div>
+    
+              </div>
+              <!--Top section start-->
+        <!-- PLAY BAR -->
+        <footer class="static-controller-audio">
+            <div class="row w-100 h-100">
+              <div class="col-3 d-flex justify-content-start align-items-center left-play">
+                  <div class="play-img mr-3">
+                      <img id="titleImg" src="./Images/image-song1.jpg" alt="Demons">
+                  </div>
+                  <div class="play-name align-middle mr-3">
+                      <p id="titleM">Demons</p>
+                      <small id="authorM">Queens</small>
+                  </div>
+                  <div class="playL-icon d-flex align-items-center">
+                      <a href="#" class="mr-3 text align-items-center d-flex">
+                          <i class="far fa-heart" aria-hidden="true"></i> <!-- change far by fas, to heart fill up-->
+                      </a>
+                      <a href="#" class="mr-3 text align-items-center d-flex"><i class="far fa-window-maximize" aria-hidden="true"></i></a>
+                  </div>
+              </div>
+              
+              <div class="col-6">
+                <div class="row h-100">
+                  <div class="col-12 play-navigation d-flex justify-content-center align-items-center">
+                      <i class="fas fa-random" id="randomBtn" aria-hidden="true"></i>
+                      <i class="fas fa-step-backward" id="prewBtn" aria-hidden="true"></i>
+                      <i class="fas fa-play-circle" id="playBtn" aria-hidden="true"></i>
+                      <i class="fas fa-step-forward" id="nextBtn" aria-hidden="true"></i>
+                      <i class="fas fa-redo-alt" id="repeatBtn" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center align-items-center input-navigation">
+                  <small id="timeStart">00:00</small>
+                  <input class="mx-3" id="durationM" type="range" min="0" max="100" value="15" onchange="durationChange()" style="background: linear-gradient(to right, white, 0%, rgb(179, 179, 179) 0%);">
+                  <small id="timeFinish">00:00</small>
+              </div>
+              </div>
+              </div>
+              <div class="col-3 d-flex justify-content-end align-items-center volumeR">
+                <i class="fas fa-indent" aria-hidden="true"></i>
+                <i class="fas fa-laptop-house" aria-hidden="true"></i>
+                <i id="muteM" class="fas fa-volume-up" aria-hidden="true"></i>
+                <input class="w-25" id="volumeM" type="range" min="0" max="100" value="30" onchange="valumeChange()" style="background: linear-gradient(to right, white, 30%, rgb(179, 179, 179) 0%);">
+            </div>
+            </div>
+          </footer>
+
+    
+<!-- SCRIPT -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+crossorigin="anonymous"></script>
+<script src="./js/artist.js"></script>
+</body>
+</html>

@@ -24,7 +24,7 @@
       <div class="content">
         <div class="row">
           <div class="col-xs-12 text-center">
-            <h1>To continue, log in to Spotify.</h1>
+            <h1> <strong> To continue, log in to Spotify. </strong></h1>
           </div>
           <div class="row">
               <div class="col-xs-12 text-center my-2">
@@ -33,10 +33,10 @@
 `````````````````````old button style <a href="#" id="facebook" class="btn btn-primary btn-lg btn-block rounded-pill w-25" style="background-color: #3b5998;" href="#!" role="button"> <span class="btn-label">Login with Facebook</span> <i class="bi bi-facebook"></i> </a>   
                  --> 
                 
-                <button type="button" class="btn btn-primary  btn-lg btn-block rounded-pill w-25 left-icon-holder" style="background-color: #3b5998;" href="#!" role="button"><i id="fb-icon">Login with Facebook</i>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
-  </svg>
+                <button type="button" class="btn btn-primary mb-0 btn-lg btn-block rounded-pill w-25 left-icon-holder" style="background-color: #3b5998;" href="#!" role="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook mb-1 mx-2" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                  </svg> Continue with Facebook
                 </button>
               </div>
           </div>
@@ -45,51 +45,101 @@
              <!--
                       old-button- style        <a href="#" class="btn btn-dark btn-lg btn-block rounded-pill w-25" > <span style="text-align: center;">Login with Apple</span> <i class="fab fa-apple"></i> </a
              --> 
-             <button type="button" class="btn btn-primary  btn-lg btn-block rounded-pill w-25 left-icon-holder" style="background-color: black;" href="#!" role="button"><i class="fab fa-apple" id="apple-icon">Login with Apple</i>
+             <button type="button" class="btn btn-primary mb-0  btn-lg btn-block rounded-pill w-25 left-icon-holder" style="background-color: black;" href="#!" role="button">
+              <img src="data:image/png;base64,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" width="16" height="16" class="mb-1 mx-2">
+                Continue with Apple
+            </button>
                   
             </div>
         </div> 
 
         
-              <strong class="divider-title"><span>or</span></strong>
+              <strong class="divider-title"><span style="font-size: small;">OR</span></strong>
             
 
  
-        
-        <div class="row justify-content-center ">
-            <div class="col-xs-12 text-center my-2">
-                <form class="email-form">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1"></label>
-                      <input type="email" class="form-control-lg my-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email or username">
-                      <small id="emailHelp" class="form-text text-muted"></small>
-                    </div>
-                    
-                    <div class="pswrd-form">
-                      <label for="exampleInputPassword1"></label>
-                      <input type="password" class="form-control-lg my-2" id="exampleInputPassword1" placeholder="Password">
-                    </div>
+        <!--
+             <div class="row justify-content-center ">
+                <div class="col-xs-12 text-center my-2">
+                    <form class="email-form">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1"></label>
+                        <input type="email" class="form-control-lg my-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email or username">
+                        <small id="emailHelp" class="form-text text-muted"></small>
+                      </div>
+                      
+                      <div class="pswrd-form">
+                        <label for="exampleInputPassword1"></label>
+                        <input type="password" class="form-control-lg my-2" id="exampleInputPassword1" placeholder="Password">
+                      </div>
 
-                    <form class="chkbox-form">
-                        <input type="checkbox" class="mx-2" name="love" value="love" id="chkbox"><label for="love"> Remember Me!</label>
-                       </form>
+                      <form class="chkbox-form">
+                          <input type="checkbox" class="mx-2" name="love" value="love" id="chkbox"><label for="love"> Remember Me!</label>
+                        </form>
 
-                    <button type="submit" id="submit "class="btn btn-primary mt-3">Login</button>
-                  </form>
+                      <button type="submit" id="submit "class="btn btn-primary mt-3">Login</button>
+                    </form>
+                
+                </div>
+              </div>
+
+     
+        -->
+
+
+         <!-- email and pswrd forms-->
+
+         <div class="d-flex email flex-column" >
+          <form class="email-form">
+            <div class="form-group">
+              <label for="exampleInputEmail1"></label>
+              <input type="email" class="form-control-lg my-1 " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email or username">
+              <small id="emailHelp" class="form-text text-muted"></small>
+            </div>
+            
+            <div class="pswrd-form">
+              <label for="exampleInputPassword1"></label>
+              <input type="password" class="form-control-lg my-2" id="exampleInputPassword1" placeholder="Password">
+            </div>            
+         
+         </div>
+
+         <!-- checkbox and login btns-->
+
+         <div class="d-flex checkbox flex-row justify-content-center">
+            <form class="chkbox-form"></form>
+              <input type="checkbox" class="mx-2 " name="love" value="love" id="chkbox"><label id="Remember-me" for="love"> Remember Me!
+                <button type="submit" id="submit" class="btn btn-primary" ><strong> Log in </strong></button>
+              </label>
+
               
+            </form>
+
+            
+
+         </div>
+
+
+         
+
+
+
+
+
+            
       
                 
-            </div>
+    
 
-            <a class="text-center my-4" href="#">Forget your Password</a>
+            <a class="text-center my-4" href="#" style="color: limegreen;">Forget your Password</a>
                                                                           
             <hr class="my-4 sep">
              
-            <h4 id="nologin" class="mb-2">Dont have an account ?</h4>
+            <h4 id="nologin" class="mb-2"><strong>Dont have an account ?</strong></h4>
 
             <div class="row">
                 <div class="col-xs-12 text-center my-1">
-                  <a href="#" class="btn btn-outline-dark btn-block rounded-pill w-25" > <span id="spotsignup" style="text-align: center;">Sign up with Spotify</span> <i class="fab fa-apple"></i> </a>                 
+                  <a href="#" class="btn btn-outline-dark btn-block rounded-pill w-25 px-3 py-2" > <span id="spotsignup" style="text-align: center;">Sign up with Spotify</span> <i class="fab fa-apple"></i> </a>                 
                 </div>
             </div> 
 
@@ -104,7 +154,7 @@
      
         
           
-        </div>
+        
       </div>
     </div>
 
