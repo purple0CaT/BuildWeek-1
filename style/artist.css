@@ -138,6 +138,7 @@ float: right;
   display: flex;
   flex-direction: column;
   justify-items: baseline;
+  background-image: url(./../Images/queen-background.jpg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
   background-blend-mode: hue;
 }
 .heading-artist .icon-verified{
