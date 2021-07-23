@@ -14,7 +14,8 @@ body {
     width: 100vw;
     min-height: 100vh;
     font-size: 0.9rem;
-    font-family: fontBold;
+    font-family: fontBold;scroll-behavior: smooth;
+    background-image: linear-gradient(#212c39,#121e3d 50%,#000);
 }
 a:hover {
     text-decoration: none;
@@ -28,6 +29,8 @@ img {
 
 .home-page {
     height: 100vh;
+    background: rgb(63,7,6);
+    background: linear-gradient(180deg, rgba(63,7,6,1) 0%, rgba(18,18,18,1) 40%);
 }
 .h-clr {
     background: rgb(63,7,6);
@@ -112,6 +115,9 @@ img {
         color: white !important;
         transition: 0.7s;
         opacity: 1;
+        text-decoration: none;
+outline: none;
+background-color: #505050;
     }
     
     /* PLAYLISTS */
@@ -161,13 +167,16 @@ img {
     }
 
     /* scrool track sidebar */
-    .side-bar-bottom{
+    .side-bar-bottom,.download{
         position: relative;
         height: 50%;
         background-color: #000;
         padding: 0 0 0 1.5rem;
     }
-    .side-bar-bottom a {
+    .download{
+        height: 10%;
+    }
+    .side-bar-bottom a , .download a{
         color: #b3b3b3;
         text-decoration: none;
     }
@@ -190,8 +199,11 @@ img {
     font-size: 1.4rem;
     }
 
-
-
+    ::-webkit-scrollbar {
+        width: 20px;
+        background-color: #c1c1c1;
+        padding: 2px;
+    }
 /* -----------------------------Top SECTION ARROWS LOGIN*/
 
 .h-main {
@@ -233,6 +245,10 @@ img {
     display: flex;
     justify-content: space-between;
     min-width: 50px;
+    background-color: #120203;
+    border-color: #120203;
+    box-sizing: border-box;
+    box-shadow: -10px 10px 13px 0px #000000;
 }
 .login-buttn {
     position: relative;
@@ -284,8 +300,17 @@ img {
 }
 
 .dropdown-menu a:hover {
-    background-color: unset;
-    color: white;
+  color: white;
+    text-decoration: none;
+outline: none;
+background-color: #505050;
 }
 
 
+/*Heading artists css*/
+.heading-artist{
+    background-image: url(./../Images/queen-background.jpg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  width: 100%;
+  height: auto;
+  background-blend-mode: hue;
+}
