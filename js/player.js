@@ -1,54 +1,3 @@
-let thisTrack
-let thisOneT
-
-
-window.onload = function(){
-    activeTr()
-    thisTrack[0].classList.add('active-track')
-    for(let trcks of thisTrack){
-        trcks.addEventListener('click', function(){
-            for(let delA of thisTrack){
-                delA.classList.remove('active-track')
-            }
-            load_track(trcks.getAttribute('value'))
-            playSong()
-            trcks.classList.add('active-track')
-        })
-    }
-    load_track(0)
-    timeChng()
-}
-
-// inputs
-const durat= document.getElementById('durationM')
-const volume = document.getElementById('volumeM')
-const image = document.getElementById('titleImg')
-
-
-// Player button
-const shufle = document.getElementById('randomBtn')
-const prew = document.getElementById('prewBtn')
-const play = document.getElementById('playBtn')
-const playA = document.getElementById('playA')
-const next = document.getElementById('nextBtn')
-const repeat = document.getElementById('repeatBtn')
-const mute = document.getElementById('muteM')
-const title = document.getElementById('titleM')
-const author = document.getElementById('authorM')
-// list
-
-
-// const
-let timer
-let indx = 0
-let autoplay = 0
-let playingSong = false
-let muteSong = 0
-
-
-// music libr
-let track = document.createElement('audio')
-
 // all song
 let All_song = [
     {
@@ -112,6 +61,58 @@ let All_song = [
         singer: 'Queen',
     },
 ]
+
+let thisTrack
+let thisOneT
+
+
+window.onload = function(){
+    activeTr()
+    thisTrack[0].classList.add('active-track')
+    for(let trcks of thisTrack){
+        trcks.addEventListener('click', function(){
+            for(let delA of thisTrack){
+                delA.classList.remove('active-track')
+            }
+            load_track(trcks.getAttribute('value'))
+            playSong()
+            trcks.classList.add('active-track')
+        })
+    }
+    load_track(0)
+    timeChng()
+}
+
+// inputs
+const durat= document.getElementById('durationM')
+const volume = document.getElementById('volumeM')
+const image = document.getElementById('titleImg')
+
+
+// Player button
+const shufle = document.getElementById('randomBtn')
+const prew = document.getElementById('prewBtn')
+const play = document.getElementById('playBtn')
+const playA = document.getElementById('playA')
+const next = document.getElementById('nextBtn')
+const repeat = document.getElementById('repeatBtn')
+const mute = document.getElementById('muteM')
+const title = document.getElementById('titleM')
+const author = document.getElementById('authorM')
+// list
+
+
+// const
+let timer
+let indx = 0
+let autoplay = 0
+let playingSong = false
+let muteSong = 0
+
+
+// music libr
+let track = document.createElement('audio')
+
 
 
 // event listener 
@@ -415,7 +416,7 @@ function timeChng(){
     for (r=0; r < All_song.length; r++){
         let inf = document.createElement('audio')
         inf.src = All_song[r].path
-        console.log(inf)
-        document.querySelectorAll('.time small')[r].innerHTML = inf.duration
+
+        document.querySelectorAll('.time small')[r].innerText = inf.duration
     }
 }
