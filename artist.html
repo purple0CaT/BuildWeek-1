@@ -23,9 +23,9 @@
       <img src="./Images/logo-spotify.png" width="150px" height="80px">
     </div>
     <ul class="sidebar-navigation">
-    
+     
       <li>
-        <a href="home.html">
+        <a href="./home.html">
           <i class="fa fa-home" aria-hidden="true"></i> Homepage
         </a>
       </li>
@@ -111,7 +111,7 @@
     </ul>
   </div>
 
-  <div class="content-container mb-5">
+  <div class="content-container">
 
     <div class="container-fluid">
 
@@ -151,7 +151,7 @@
     <!--Top section start-->
 
     <!--Second section playlist start-->
-    <div class="container">
+    <div class="container-fluid">
       <!--top heading start-->
       <div class="row">
         <div class="col">
@@ -161,10 +161,10 @@
       <!--top heading end-->
       <!--Static design for playlist start-->
       <section id="static-playlist-design">
-        <div class="container">
+        <div class="container container-sm">
           <!--heading to play and follow start-->
           <div class="play-static">
-            <button type="button" class="btn"><i class="bi-pause-fill pause"></i></button>
+            <button type="button" class="btn"><i class="fas fa-play-circle"></i></button>
             <button type="button" class="btn follow ">Follow</button>
             <button type="button" class="btn "><i class="bi bi-three-dots"></i></button>
           </div>
@@ -172,7 +172,7 @@
           <!--Play Music section start-->
           <div class="row mb-5">
             <!--Playlist section start-->
-            <div class="col-8">
+            <div class="col-8  ">
               <h4>Popular</h4>
               <!--table start-->
               <table class="text-white w-100">
@@ -305,6 +305,12 @@
   </div>
 </footer>
 
+
+
+    
+    
+    
+
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -333,8 +339,10 @@
     document.getElementById('stop2').addEventListener('click', function () {
       audio2_info.pause();
     }, false);
+
+
   </script>
-  <script src="./Js/artist.js"></script>
+  <script src="./js/artist.js"></script>
 </body>
 
 </html>
