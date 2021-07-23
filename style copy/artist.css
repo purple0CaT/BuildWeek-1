@@ -1,0 +1,200 @@
+html{
+  height: 100%;
+  
+}
+body{
+  font-family: Circular,Helvetica,Arial,sans-serif;
+  margin: 0;
+ background-image: linear-gradient(#212c39,#121e3d 50%,#000);
+ scroll-behavior: smooth;
+}
+
+.sidebar-container {
+position: fixed;
+width: 20%;
+height: 700px;
+left: 0;
+overflow-x: hidden;
+overflow-y: auto;
+background: #1a1a1a;
+color: #C1C1C1;;
+}
+
+
+.sidebar-logo {
+padding: 20px;
+}
+
+.sidebar-navigation {
+padding: 0;
+margin: 0;
+list-style-type: none;
+position: relative;
+}
+
+.sidebar-navigation li {
+background-color: transparent;
+position: relative;
+display: inline-block;
+width: 100%;
+line-height: 20px;
+}
+
+.sidebar-navigation li a {
+padding: 10px 15px 10px 30px;
+display: block;
+color:#C1C1C1;;
+}
+
+.sidebar-navigation li .fa ,.sidebar-navigation li .fas  {
+margin-right: 10px;
+}
+
+.sidebar-navigation li a:active,
+.sidebar-navigation li a:hover,
+.sidebar-navigation li a:focus {
+text-decoration: none;
+outline: none;
+background-color: #505050;
+}
+
+.sidebar-navigation li::before {
+
+position: absolute;
+content: '';
+height: 100%;
+left: 0;
+top: 0;
+-webkit-transition: width 0.2s ease-in;
+transition: width 0.2s ease-in;
+width: 3px;
+z-index: -1;
+}
+
+.sidebar-navigation li:hover::before {
+width: 100%;
+}
+
+.sidebar-navigation .header , .sidebar-navigation .songs {
+font-size: 12px;
+text-transform: uppercase;
+background-color: #151515;
+padding: 10px 15px 10px 30px;
+}
+
+.sidebar-navigation .header::before {
+background-color: transparent;
+}
+/*Scroll Bar*/
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+
+.content-container {
+width: 80%;
+float: right;
+}
+.artist-top-bar {
+  display: inline-block;
+  background-image: url(./../Images/queen-background.jpg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  width: 100%;
+  height: auto;
+  background-blend-mode: hue;
+}
+.navigation-icons {
+  float: left;
+  color: #C1C1C1;
+}
+
+.login-profile {
+  float: right;
+} 
+.btn-secondary {
+  background-color: #120203;
+  border-color: #120203;
+  box-sizing: border-box;
+  box-shadow: -10px 10px 13px 0px #000000;
+}
+.heading-artist {
+  padding-top: 16%;
+  padding-left: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-items: baseline;
+}
+.heading-artist .icon-verified{font-size:23px; line-height: 39px;}
+.icon-verified i{color:#2579C4; font-size: 23px; margin-right: 12px;}
+.heading-artist h1 {
+  font-size: 4.5rem;
+}
+.heading-artist p {
+  font-size: 20px;
+  line-height: 37px;
+  font-style: italic;
+}
+#static-playlist-design{
+  background: rgb(52,52,52);
+background: linear-gradient(180deg, rgba(52,52,52,1) 40%, rgba(18,18,18,1) 60%);
+padding: 47px 0;box-shadow: -10px 10px 13px 0px #000000;
+}
+.play-static{
+  margin-bottom: 20px;
+}
+.play-static i.pause{
+      font-size: 2.4rem;
+      background-color: #1DB954;
+      border-radius: 50%;
+      color: #fff;
+      padding: 10px;
+}
+.play-static button.follow {
+  background: transparent;
+  color: #fff;
+  padding: 3px 19px;
+  font-weight: 800;
+  border: 1px solid #666666;
+}
+.play-static i.bi-three-dots{
+  color: #ccc;
+  top: 8px;
+  font-size: 23px;
+}
+#static-playlist-design h4{
+  font-size: 1.9rem;
+  color: #fff;
+  font-weight: 700;
+  line-height: 4.2rem;
+}
+#static-playlist-design table {
+  border-collapse: collapse;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 4.4rem;
+}
+#static-playlist-design table th{
+  padding-right: 15px;
+}
+#static-playlist-design table img{
+  width:50px;
+  height: 50px;
+  background:whitesmoke;
+  border: 1px solid #C1C1C1;
+}
+.artist-pick img{
+  background:#ccc;
+}
+.artist-pick-section {
+  color: #fff;
+}
+table button {
+  background: transparent;
+  border: none;
+  color: #1DB954;
+    font-size: 23px;
+}
+
+section.static-controller-audio audio{
+  width: 100%;
+}
