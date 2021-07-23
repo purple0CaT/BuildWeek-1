@@ -189,10 +189,11 @@ box-shadow: -10px 10px 13px 0px #000000;
 }
 #static-playlist-design table {
   border-collapse: collapse;
-  font-size: 1.2rem;
+  font-size: 16px;
   font-weight: 600;
   line-height: 4.4rem;
 }
+
 #static-playlist-design table th{
   padding-right: 15px;
 }
