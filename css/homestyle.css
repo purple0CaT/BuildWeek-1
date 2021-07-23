@@ -52,7 +52,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     background: rgb(69,10,241);
     background: linear-gradient(142deg, rgba(69,10,241,1) 0%, rgba(188,227,211,1) 87%);}
 
@@ -89,6 +88,7 @@
 .recent-card {
     background-color: #171717;
     min-width: 8rem;
+    flex-basis: 12%;
     max-width: 12%;
     color: #b3b3b3;
     transition: 0.3s;
@@ -114,7 +114,6 @@
 /* end */
 .img-card {
     box-shadow: 0 10px 10px black;
-
     display: flex;
     width: 100%;
     aspect-ratio: 1/1;
