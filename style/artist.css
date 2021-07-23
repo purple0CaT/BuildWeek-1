@@ -138,6 +138,7 @@ float: right;
   display: flex;
   flex-direction: column;
   justify-items: baseline;
+  background-image: url('Images/Queen-background-image.jpg');
 }
 .heading-artist .icon-verified{
   font-size:23px; 
