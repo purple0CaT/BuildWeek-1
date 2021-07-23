@@ -65,18 +65,23 @@ let All_song = [
 let thisTrack
 let thisOneT
 
-
 window.onload = function(){
     activeTr()
     thisTrack[0].classList.add('active-track')
     for(let trcks of thisTrack){
         trcks.addEventListener('click', function(){
+            if(playingSong == false){
+                playingSong = true
             for(let delA of thisTrack){
                 delA.classList.remove('active-track')
             }
             load_track(trcks.getAttribute('value'))
             playSong()
             trcks.classList.add('active-track')
+        } else {
+            playingSong = false
+            pauseSong()
+        }
         })
     }
     load_track(0)
