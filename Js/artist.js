@@ -1,3 +1,22 @@
+let audio_info = document.getElementById('audio1');
+document.getElementById('play').addEventListener('click', function () {
+  audio_info.play();
+}, false);
+//
+document.getElementById('stop').addEventListener('click', function () {
+  audio_info.pause();
+}, false);
+
+let audio2_info = document.getElementById('audio2');
+document.getElementById('play2').addEventListener('click', function () {
+  audio2_info.play();
+}, false);
+console.log('2 plau')
+//
+document.getElementById('stop2').addEventListener('click', function () {
+  audio2_info.pause();
+}, false);
+
 
 // inputs
 const durat= document.getElementById('durationM')

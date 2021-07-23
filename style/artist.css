@@ -1,13 +1,13 @@
 /* html {
   width: 100vw !important;
-  min-height: 100vh !important;
+  height: 100vh !important;
 }
 body{
   scroll-behavior: smooth;
-  min-height: 100vh !important;
-  min-width: 100vw !important;
-}
- */
+  height: 100vh !important;
+  width: 100vw !important;
+} */
+
 .home-page {
   background-image: linear-gradient(#212c39,#121e3d 20%,#000) !important;
 }
@@ -103,7 +103,7 @@ background-color: transparent;
 /*Scroll Bar*/
 /* ::-webkit-scrollbar {
   width: 20px;
-} */ */
+} */
 
 /*Content Container start*/
 
@@ -160,8 +160,6 @@ background: rgb(52,52,52);
 background: linear-gradient(180deg, rgba(52,52,52,1) 40%, rgba(18,18,18,1) 60%);
 padding: 2rem 0;
 box-shadow: -10px 10px 13px 0px #000000;
-}
-.play-static{
 }
 .play-static i.fas{
       font-size: 3.4rem;
@@ -356,9 +354,10 @@ input[type="range"]:hover::-webkit-slider-thumb,
     height: 3.2rem;
 }
 }
+*/
 
 @media (max-width:1041px) and (min-width:850px){
   .col-4.artist-pick {
     display: none;
 }
-} */
+}
