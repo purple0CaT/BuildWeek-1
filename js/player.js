@@ -67,11 +67,10 @@ let thisOneT
 
 window.onload = function(){
     activeTr()
-    thisTrack[0].classList.add('active-track')
+    thisTrack[indx].classList.add('active-track')
     for(let trcks of thisTrack){
 
         trcks.addEventListener('click', function(){
-
             if(playingSong == false){
                 playingSong = true
             for(let delA of thisTrack){
@@ -88,6 +87,16 @@ window.onload = function(){
     }
     load_track(0)
     timeChng()
+
+    // tracktime
+function timeChng(){
+    let inf = document.createElement('audio')
+    for (r=0; r < All_song.length; r++){
+        inf.src = All_song[r].path
+        inf.load()
+        document.querySelectorAll('.time small')[r].innerText = `${inf.duration}`
+    }
+}
 }
 
 // inputs
@@ -331,7 +340,6 @@ function shufleIt(){
             bLibr.unshift(randM)
         }
     } else {
-        xIndx = -1
         sLibr = []
         shufleM = 0
         shufle.style.color = '#b3b3b3'
@@ -462,12 +470,3 @@ function activeTr (indx){
 }
 
 
-// tracktime
-function timeChng(){
-    for (r=0; r < All_song.length; r++){
-        let inf = document.createElement('audio')
-        inf.src = All_song[r].path
-
-        document.querySelectorAll('.time small')[r].innerText = inf.duration
-    }
-}
