@@ -30,6 +30,7 @@ img {
     min-height: 100vh;
     position: relative;
     overflow: hidden;
+
 }
 .h-clr {
     background: rgb(63,7,6);
@@ -200,20 +201,19 @@ img {
     }
 
     
-    ::-webkit-scrollbar {
-        background-color: unset;
+    .side-tracks::-webkit-scrollbar,
+    ::-webkit-scrollbar{
+        width: 8px;
     }
+    
+    .side-tracks::-webkit-scrollbar-track-piece,
     ::-webkit-scrollbar-track-piece   {
-        background-image: linear-gradient(#212c39,#121e3d 10%,#000) !important;
+        background-color: black;
     }
-    .side-tracks::-webkit-scrollbar-track-piece {
-        background-image: none !important;
-        background-color: black !important;
-    }
-
+    .side-tracks::-webkit-scrollbar-thumb,
     ::-webkit-scrollbar-thumb  {
         border-radius: 1px;
-        background-color: #4D4D4D;
+        background-color: #4D4D4D !important;
     }
 
 
