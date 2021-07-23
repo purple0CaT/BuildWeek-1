@@ -69,7 +69,9 @@ window.onload = function(){
     activeTr()
     thisTrack[0].classList.add('active-track')
     for(let trcks of thisTrack){
+
         trcks.addEventListener('click', function(){
+
             if(playingSong == false){
                 playingSong = true
             for(let delA of thisTrack){
@@ -259,25 +261,50 @@ function pauseSong(){
 // next song
 function nextSong (){
     if (indx < All_song.length-1){
-        indx += 1
-        load_track(indx)
-        playSong()
+        if (shufleM == 1){
+            shufleMus()
+            load_track(indx)
+            playSong()    
+        } else {
+            indx += 1
+            load_track(indx)
+            playSong()    
+        }
     } else {
-        indx = 0
-        load_track(indx)
-        playSong()
+        if (shufleM == 1){
+            shufleMus()
+            load_track(indx)
+            playSong()    
+        } else {
+            indx = 0
+            load_track(indx)
+            playSong()
+        }
     }
 }
 // prew song
 function prewSong (){
     if (indx > 0){
-        indx -= 1
-        load_track(indx)
-        playSong()
+        if (shufleM == 1){
+            shufleMusB()
+            load_track(indx)
+            playSong()
+        } else {
+            
+            indx -= 1
+            load_track(indx)
+            playSong()
+        }
     } else {
-        indx = All_song.length
-        load_track(indx)
-        playSong()
+        if (shufleM == 1){
+            shufleMusB()
+            load_track(indx)
+            playSong()
+        } else {      
+            indx = All_song.length
+            load_track(indx)
+            playSong()
+        }
     }
 
 }
@@ -287,6 +314,9 @@ shufle.addEventListener('click', shufleIt)
 let shufleM = 0
 let randM = 0
 let sLibr = []
+let bLibr = []
+let xIndx = -1
+let yIndx = -1
 
 function shufleIt(){
     if(shufleM == 0){
@@ -298,23 +328,33 @@ function shufleIt(){
                 randomM()
             }
             sLibr.push(randM)
+            bLibr.unshift(randM)
         }
     } else {
+        xIndx = -1
         sLibr = []
         shufleM = 0
         shufle.style.color = '#b3b3b3'
     }
     console.log(sLibr)
+    shufleMus()
+    console.log(bLibr)
 }
-function shufleMus (){
-    let shuflTrack = sLibr[indx]
-    load_track(shuflTrack)
-    playSong()
-
+// shufle netx
+function shufleMus(){
+    xIndx = xIndx + 1
+    console.log(xIndx)
+    indx = sLibr[xIndx]
+}
+// shufle previous
+function shufleMusB(){
+    yIndx = yIndx + 1
+    console.log(yIndx)
+    indx = bLibr[yIndx]
 }
 
 function randomM(){
-    randM = Math.floor(Math.random()*((All_song.length+1)-0)+0)
+    randM = Math.floor(Math.random()*(All_song.length-0)+0)
 }
 
 
@@ -343,9 +383,15 @@ function rangeSl(){
             play.classList.remove('fa-pause')
             play.classList.add('fa-play-circle')
             if (autoplay==1){
-                indx +=1
-                load_track(indx)
-                playSong()
+                if (shufleM == 1){
+                    shufleMus()
+                    load_track(indx)
+                    playSong()
+                } else {
+                    indx +=1
+                    load_track(indx)
+                    playSong()
+                }
             }
         }
 }
