@@ -175,10 +175,14 @@ background-color: #505050;
     }
     .download{
         height: 10%;
+        padding: 0 0 0 1.5rem;
     }
     .side-bar-bottom a , .download a{
         color: #b3b3b3;
         text-decoration: none;
+    }
+    .download a{
+        padding: 0 0 0 1.5rem;
     }
     .side-tracks {
         height: 85%;
