@@ -1,0 +1,132 @@
+
+
+/* -----------------------------------------Content SECTION */
+.album-header {
+    width: 100%;
+    height: 14rem;
+    display: flex;
+    color: white;
+    font-family: fontBold;
+}
+.album-header small {
+    font-family: fontLight;
+    color: #b3b3b3;
+}
+.albm-img {
+    aspect-ratio: 1/1;
+}
+.albm-img img {
+    height: 100%;
+    aspect-ratio: 1/1;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.541);
+}
+.albm-details {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.albm-info {
+padding-top: 0.5rem;
+}
+.albm-details img {
+    width: 30px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.albm-details  a{
+    padding-top: 0.6rem;
+    color: white;
+    transition: 0.3s;
+}
+.albm-details  a:hover{
+    color: #1DB954;
+}
+/* list tracks */
+.tracks-lists {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.158);
+    width: 100%;
+    padding: 2rem;
+    padding-bottom: 5rem !important;
+}
+.menu-icons i {
+    color: #b3b3b3;
+    font-size: 1.8rem;
+}
+.play-alb {
+    position: relative;
+}
+.menu-icons .fa-play-circle {
+    background-color: white;
+    color: #1DB954 !important;
+}
+.menu-icons i:first-child {
+    position: relative;
+    border-radius: 50%;
+    color: white;
+    font-size: 3rem;
+}
+.menu-icons .fa-play-circle::after {
+    position: absolute;
+    content: "";
+    width: 3.1rem;
+    height: 3.1rem;
+    border-radius: 50%;
+    left: -1px;
+    top: 0;
+    border: 2px solid #1DB954;
+}
+
+.menu-icons i:hover {
+    cursor: pointer;
+}
+/* -----------LISTS */
+/* title track */
+.play-list-head {
+    padding: 0 1rem;
+    justify-content: space-between;
+    color: #b3b3b3;
+    border-bottom: 1px solid #b3b3b33a;
+    font-size: 0.8rem;
+}
+.list-title {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.4rem;
+}
+.list-title p{
+    margin: 0;
+}
+.list-title span {
+    font-family: fontLight;
+    font-size: 0.8rem;
+}
+/* Bodry track */
+.play-list-body {
+    padding: 0 1rem;
+    padding-top: 0.6rem;
+    justify-content: space-between;
+    color: #b3b3b3;
+    align-items: baseline;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+.play-list-body:hover {
+    background-color: #b3b3b33b ;
+    border-radius: 5px;
+}
+.active-track span,
+.active-track p{
+    color: #1DB352 !important;
+}
+
+.play-list-body p{
+    margin: 0;
+    color: white;
+}
+
+.play-list-body small {
+    font-family: fontLight;
+}
+

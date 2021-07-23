@@ -11,11 +11,10 @@
 }
 body {
     margin: 0;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     font-size: 0.9rem;
-    font-family: fontBold;scroll-behavior: smooth;
-    background-image: linear-gradient(#212c39,#121e3d 50%,#000);
+    font-family: fontBold;
 }
 a:hover {
     text-decoration: none;
@@ -28,9 +27,7 @@ img {
 /* FOnt link */
 
 .home-page {
-    height: 100vh;
-    background: rgb(63,7,6);
-    background: linear-gradient(180deg, rgba(63,7,6,1) 0%, rgba(18,18,18,1) 40%);
+    min-height: 100vh;
 }
 .h-clr {
     background: rgb(63,7,6);
@@ -115,9 +112,6 @@ img {
         color: white !important;
         transition: 0.7s;
         opacity: 1;
-        text-decoration: none;
-outline: none;
-background-color: #505050;
     }
     
     /* PLAYLISTS */
@@ -167,22 +161,15 @@ background-color: #505050;
     }
 
     /* scrool track sidebar */
-    .side-bar-bottom,.download{
+    .side-bar-bottom{
         position: relative;
         height: 50%;
         background-color: #000;
         padding: 0 0 0 1.5rem;
     }
-    .download{
-        height: 10%;
-        padding: 0 0 0 1.5rem;
-    }
-    .side-bar-bottom a , .download a{
+    .side-bar-bottom a {
         color: #b3b3b3;
         text-decoration: none;
-    }
-    .download a{
-        padding: 0 0 0 1.5rem;
     }
     .side-tracks {
         height: 85%;
@@ -203,11 +190,8 @@ background-color: #505050;
     font-size: 1.4rem;
     }
 
-    ::-webkit-scrollbar {
-        width: 20px;
-        background-color: #c1c1c1;
-        padding: 2px;
-    }
+
+
 /* -----------------------------Top SECTION ARROWS LOGIN*/
 
 .h-main {
@@ -249,10 +233,6 @@ background-color: #505050;
     display: flex;
     justify-content: space-between;
     min-width: 50px;
-    background-color: #120203;
-    border-color: #120203;
-    box-sizing: border-box;
-    box-shadow: -10px 10px 13px 0px #000000;
 }
 .login-buttn {
     position: relative;
@@ -304,17 +284,8 @@ background-color: #505050;
 }
 
 .dropdown-menu a:hover {
-  color: white;
-    text-decoration: none;
-outline: none;
-background-color: #505050;
+    background-color: unset;
+    color: white;
 }
 
 
-/*Heading artists css*/
-.heading-artist{
-    background-image: url(./../Images/queen-background.jpg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-  width: 100%;
-  height: auto;
-  background-blend-mode: hue;
-}

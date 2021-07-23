@@ -1,0 +1,160 @@
+
+/* --------------------------------------MAIN SECTION */
+
+.header {
+    font-family: fontBold;
+    color: white;
+    margin: 0;
+}
+.morn-tabs {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+}
+.morn-tabs a {
+    min-width: 12rem;
+    max-width: 20%;
+}
+.morn-tabs a div {
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+.morn-tabs a p {
+    margin: 0;
+    padding: 0;
+}
+
+.tab {
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.3);
+    width: 19%;
+    height: 5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+
+    overflow: hidden;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: fontBold;
+}
+.tab img {
+    width: 100%;
+    height: 100%;
+}
+
+.morn-tabs a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.liked-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(69,10,241);
+    background: linear-gradient(142deg, rgba(69,10,241,1) 0%, rgba(188,227,211,1) 87%);}
+
+.liked-tab i {
+    font-size: 2rem;
+
+}
+
+.bands-tab {
+    flex-wrap: wrap;
+    flex: 0 0 25%
+}
+.bands-tab img {
+    width: 50%;
+    height: 50%;
+}
+
+
+/* recentrly played */
+.recently-ply a{
+    color: #b3b3b3 ;
+    transition: 0.3s;
+}
+
+.recently-ply a:hover{
+    color: white ;
+}
+.recent-played {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.recent-card {
+    background-color: #171717;
+    min-width: 8rem;
+    flex-basis: 12%;
+    max-width: 12%;
+    color: #b3b3b3;
+    transition: 0.3s;
+    margin-bottom: 1rem;
+}
+.recent-card:hover {
+    text-decoration: none;
+    color: white;
+}
+/* for 4 img in card */
+.img-card-q {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 50%;
+    width: 100%;
+    aspect-ratio: 1/1;
+    box-shadow: 0 10px 10px black;
+}
+.img-card-q img {
+    height: 50%;
+    aspect-ratio: 1/1;
+}
+/* end */
+.img-card {
+    box-shadow: 0 10px 10px black;
+    display: flex;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+.img-card img {
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+.img-card i {
+    font-size: 3rem;
+    color: white;
+}
+
+
+.body-card{
+    max-height: 5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 0.8rem !important;
+}
+.body-card h6{
+    color: white !important;
+    font-family: fontBold;
+}
+
+
+/* SHOWS TO TRY */
+
+.shows-card {
+    background-color: #171717;
+    width: 12%;
+    color: #b3b3b3;
+    transition: 0.3s;
+}
+.shows-card:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.shows-card .img-card,
+.shows-card .img-card-q{
+    border-radius: 0.6rem !important;
+    overflow: hidden !important;
+}
