@@ -28,6 +28,8 @@ img {
 
 .home-page {
     min-height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
 .h-clr {
     background: rgb(63,7,6);
@@ -90,6 +92,13 @@ img {
     
     .sd-links i {
         font-size: 1.3rem;
+    }
+    /* Arrrowws */
+    .artist-arr {
+        position: absolute;
+        left: 1rem;
+        top: 0;
+        right: 2rem;
     }
     
     
@@ -232,7 +241,7 @@ img {
     position: relative;
     display: flex;
     justify-content: space-between;
-    min-width: 50px;
+    max-width: 5rem;
 }
 .login-buttn {
     position: relative;
